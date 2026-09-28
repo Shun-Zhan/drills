@@ -4,7 +4,6 @@ This read-only reporting layer sits outside the frozen training-source fingerpri
 It can be rerun after all training and evaluation records have been saved.
 """
 import csv
-import json
 from math import sqrt
 from pathlib import Path
 import sys
@@ -42,6 +41,13 @@ def main():
     analyze.generate()
     summary = read(SUITE / 'summary.json')
     banks = summary['evaluation_by_seed']
+    with (SUITE.parent / 'ten-step-optimality/candidates.csv').open() as stream:
+        max_four_step = [row for row in csv.DictReader(stream)
+                         if row['circuit'] == 'max' and row['depth'] == '4']
+    feasible_sequences = sum(row['feasible'] == 'True' for row in max_four_step)
+    if (len(max_four_step), feasible_sequences) != (2401, 26):
+        raise ValueError('The enumerated max four-step baseline changed.')
+    random_any_feasible = 1 - (1 - feasible_sequences / len(max_four_step)) ** 10
     intervals = []
     for bank in banks:
         for policy in POLICIES:
@@ -90,6 +96,9 @@ def main():
         f'即使观察到 0/10，区间仍为 [{zero[0]:.3f}, {zero[1]:.3f}]；'
         f'观察到 10/10 时为 [{full[0]:.3f}, {full[1]:.3f}]。'
         '这些区间只描述固定模型下重复抽取四步动作的精度，不包含训练种子之间的变动。', '',
+        f'四步穷举数据中，max 的 {len(max_four_step)} 条均匀动作序列仅有 '
+        f'{feasible_sequences} 条可行；抽取10条时至少一次可行的概率约为 '
+        f'{random_any_feasible:.1%}。因此 0/10 可行仍是常见的随机波动。', '',
         '下表按同一训练种子配对，展示每种策略相对对照组的可行率差；'
         '区间从10个训练种子重采样10,000次得到。逐组最优命中率差及区间另见 '
         '[evaluation-pairs.csv](evaluation-pairs.csv)。区间属于探索性估计，不能据此宣称普遍收益。', '',
