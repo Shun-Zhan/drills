@@ -60,3 +60,7 @@ python drills.py report fpga
 | int2float | 3 | 48 | 3 | 44.00 |
 | i2c | 4 | 322 | 4 | 303.67 |
 | max | 41 | 777 | 41 | 772.33 |
+
+## 实验评审
+
+参考结果是训练搜索中见过的最好可行解，不是独立测试成绩。设计是否可靠、这些数字说明什么、下一步改什么，见 [docs/fpga-experiment-review.md](docs/fpga-experiment-review.md)。
