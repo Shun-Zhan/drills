@@ -1,0 +1,23 @@
+{
+  "fingerprint": "073718d35a3963353ddbf3115617c8d3518380a6447e854dbc74c0996588e72c",
+  "generated_at": "2026-09-28T09:48:42.382202+00:00",
+  "source_sha256": "c0b661bd4f0ecd5ec46f41fe78409fa8b1c2c98b4a6a342820a494a261efcc16",
+  "inputs": {
+    "training_manifest": "1a182fbb38a08dd10177563f4bf976e4fae5ebadcdc39ca877c0290f9bff5195",
+    "evaluation_manifest": "e8c64375f2fe965fbd378fac8c8ec989df5433782fd046c0faf0368f86f39f5d"
+  },
+  "outputs": {
+    "training.csv": "71c8a3e0af120d2374db2567ddbf0bf7e3cd8272d3c266c539734a4b1271cd19",
+    "evaluation.csv": "cc50aac0926f46549808c0e98566494de053a4458537880cafd84d8225f7ace5",
+    "evaluation-by-seed.csv": "0d04c3385b13b786eda6521cac93283d99be9a47bc1d58eed069226195a24334",
+    "diagnostics.csv": "8c3c4fb650ab4d0d5bad794da3c90532fbaf3e0cfc1791b4f13d5d09ba7b9d74",
+    "diagnostic-means.csv": "afdbb7d2649ce02fc383a45133ae8df5b171cf1ad5c7ff67e78d50403a6828c9",
+    "diagnostic-pairs.csv": "7be31d64db57e48529fed44e38ee02282a3f26ecc65c3681dba34c6e28177bde",
+    "diagnostics.svg": "6fe74233a4d2370f5d00b9098997e32da49a0110cb97beb7fed765d818803e38",
+    "summary.json": "9888dfcbdaab7323278864c91ca96186a95608db822f69ab8bae85107ac16389",
+    "report.md": "21bd52a7b5bca398a61b0b6171924fc84546d7e2f3bb7d4cfced42bd6c316548",
+    "evaluation-intervals.csv": "118de777eb0dd19ad10873bd3f882302529afa983fd1ea13aa20c089b66fda51",
+    "evaluation-pairs.csv": "c45f2e3b9652033dae4f126802cd3fb4a01a81b223a967bcf647b4c29c138b45"
+  },
+  "reporting_extension_sha256": "e78861d87b0e89fb608bbec450bc10bf4c4fbd055621bb75a611bb370c31b89d"
+}

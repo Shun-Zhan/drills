@@ -32,13 +32,17 @@ def wilson(count, total=10):
 
 def write_csv(path, rows):
     with path.open('w', newline='') as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator='\n')
         writer.writeheader()
         writer.writerows(rows)
 
 
 def main():
     analyze.generate()
+    for path in SUITE.glob('*.csv'):
+        data = path.read_bytes()
+        if b'\r\n' in data:
+            path.write_bytes(data.replace(b'\r\n', b'\n'))
     summary = read(SUITE / 'summary.json')
     banks = summary['evaluation_by_seed']
     with (SUITE.parent / 'ten-step-optimality/candidates.csv').open() as stream:
@@ -160,9 +164,8 @@ def main():
     provenance = read(provenance_path)
     provenance['generated_at'] = now()
     provenance['reporting_extension_sha256'] = sha(__file__)
-    provenance['outputs']['evaluation-intervals.csv'] = sha(SUITE / 'evaluation-intervals.csv')
-    provenance['outputs']['evaluation-pairs.csv'] = sha(SUITE / 'evaluation-pairs.csv')
-    provenance['outputs']['report.md'] = sha(report_path)
+    for name in (*provenance['outputs'], 'evaluation-intervals.csv', 'evaluation-pairs.csv'):
+        provenance['outputs'][name] = sha(SUITE / name)
     dump(provenance_path, provenance)
 
 
