@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/Users/zhan/Downloads/test/DRiLLS/.tools/conda-env/bin/python",
+    "-B",
+    "/Users/zhan/Downloads/test/DRiLLS-segmented-updates/experiments/segmented-updates/check.py"
+  ],
+  "started_at": "2026-09-28T03:17:44.882462+00:00",
+  "finished_at": "2026-09-28T03:19:07.527808+00:00",
+  "elapsed_seconds": 82.64558674999999,
+  "tests_run": 18,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "sources": {
+    "requirements.txt": "ce06542b5e74aeae2733fe9ac3607c3f11e41bfc3cea747a9dd4b80608963aed",
+    "drills/__init__.py": "bd1d84a3673dabd0fdbe4d8ca4f11f69155e9ad500c8e2c375df42809034a875",
+    "drills/experiment.py": "b7d11ffe5db362ac0b57954fc647550718262ac92d8f650055b84ef1394b4b0b",
+    "drills/features.py": "d0c9ab6028f2c28e1116de693a66eceefab0c78a5d57a34c0ee76dce4ab46dc6",
+    "drills/fpga_session.py": "1ecba422c1e69bc17bb911e2561130cf16f8b591eb30a23a6a38e500f71dcbf9",
+    "drills/model.py": "f0bc47e08db3d296ab50d2441f0630ebfe1b19f574f22e09217ea73bae49b835",
+    "drills/segmented_model.py": "e35759b8d54e1dad690fa34b5bd9987cf0c5762377e35f1ce1cfbc6300b65caf",
+    "experiments/segmented-updates/protocol.yml": "6ad35991f5c3c270cdbe3bf8d9d02a8b4e71b64147da118ad3caf631d1616f51",
+    "experiments/segmented-updates/check.py": "ec3f301ad5d6646ef5dc9cfd0e78cedce779fbe3da4257b5e361074f5e919f7b",
+    "experiments/segmented-updates/isolation.py": "ba04370ca3dcf937b41f8af81eba4656285f5ec62e95d7c9076803dbcc947d45",
+    "experiments/segmented-updates/plot.py": "65ce7afad8470a652f03b6ef8c3e73a2e3f0567ff8f78379568fd35b52272444",
+    "experiments/segmented-updates/results.py": "0f1acab9cd47d7dda2859cf85e0990329c27d1871100f1ee9879afafd263dffb",
+    "experiments/segmented-updates/run.py": "2ded67984292bb8e4537e6a5364440561fed0768b5fb31d982c0ac3d9f20a3e2",
+    "experiments/segmented-updates/study.py": "1dc81937c01cc51140fb783e4ab3d367826942135a94313e752330eb884e0fb1",
+    "tests/test_segmented_updates.py": "f12390b6f40f6d7658afd8fd8a01881843c6b6af96dc2cf8ff965a9185696620"
+  },
+  "log_sha256": "ae2203a1f769d7d3b99976b8ceae966dce2b3e479ea9e61ac362cf9a8d6bf645"
+}

@@ -1,0 +1,175 @@
+protocol:
+  episodes: 100
+  iterations: 10
+  seeds:
+  - 10
+  - 11
+  - 12
+  lut_inputs: 6
+  initial_sequence:
+  - strash
+  resyn2:
+  - balance
+  - rewrite
+  - refactor
+  - balance
+  - rewrite
+  - rewrite -z
+  - balance
+  - refactor -z
+  - rewrite -z
+  - balance
+  actions:
+  - rewrite
+  - rewrite -z
+  - refactor
+  - refactor -z
+  - resub
+  - resub -z
+  - balance
+  circuits:
+    i2c:
+      file: ../../benchmarks/i2c.aig
+      max_levels: 4
+  evaluation:
+    include_initial: true
+    std_ddof: 0
+method:
+  gamma: 0.99
+  optimizer:
+    name: Adam
+    learning_rate: 0.001
+    betas:
+    - 0.9
+    - 0.999
+    epsilon: 1.0e-08
+    weight_decay: 0.0
+  network:
+    actor_hidden:
+    - 20
+    - 20
+    critic_hidden:
+    - 10
+    activation: ReLU
+    initialization: xavier_uniform
+    bias_initialization: 0.0
+  features:
+  - input_pins
+  - output_pins
+  - cells
+  - edges
+  - levels
+  - latches
+  - and_fraction
+  - or_fraction
+  - not_fraction
+  normalization:
+    state: episode_welford
+    variance_min: 0.01
+    variance_max: 1000000000.0
+    returns: standardize
+    returns_epsilon: 1.0e-08
+  loss:
+    actor_weight: 1.0
+    critic_weight: 1.0
+    reduction: sum
+  reward:
+    feasible:
+      -1: -1
+      0: 0
+      1: 3
+    infeasible:
+      -1:
+        -1: -3
+        0: -2
+        1: -1
+      0:
+        -1: -2
+        0: 0
+        1: 2
+      1:
+        -1: 1
+        0: 2
+        1: 3
+environment:
+  torch_threads: 1
+runtime:
+  abc_binary: /Users/zhan/Downloads/test/DRiLLS/.tools/conda-env/bin/yosys-abc
+  yosys_binary: /Users/zhan/Downloads/test/DRiLLS/.tools/conda-env/bin/yosys
+  output_dir: ../../results/segmented-updates
+  workers: 3
+experiment:
+  groups:
+    A:
+      learner: legacy
+      H: 10
+      K: 10
+      learning: true
+      uniform: false
+    B:
+      learner: nstep
+      H: 10
+      K: 10
+      learning: true
+      uniform: false
+    C:
+      learner: nstep
+      H: 50
+      K: 50
+      learning: true
+      uniform: false
+    D:
+      learner: nstep
+      H: 50
+      K: 10
+      learning: true
+      uniform: false
+    F:
+      learner: nstep
+      H: 50
+      K: 10
+      learning: false
+      uniform: false
+    U:
+      learner: nstep
+      H: 50
+      K: 10
+      learning: false
+      uniform: true
+  training_candidates_per_run: 1000
+  evaluation_seeds:
+  - 30000
+  - 30001
+  - 30002
+  - 30003
+  - 30004
+  - 30005
+  - 30006
+  - 30007
+  - 30008
+  - 30009
+  - 30010
+  - 30011
+  - 30012
+  - 30013
+  - 30014
+  - 30015
+  - 30016
+  - 30017
+  - 30018
+  - 30019
+  - 30020
+  - 30021
+  - 30022
+  - 30023
+  - 30024
+  - 30025
+  - 30026
+  - 30027
+  - 30028
+  - 30029
+  evaluation_steps: 50
+  timeout_seconds: 1800
+  minimum_mean_lut_reduction: 1
+  minimum_seed_wins: 2
+  target_luts: 300

@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "historical_files_checked": 95903,
+  "changed_or_missing_files": [],
+  "original_refs_unchanged": true,
+  "original_worktree_status_unchanged": true,
+  "original_repository": "/Users/zhan/Downloads/test/DRiLLS",
+  "new_worktree": "/Users/zhan/Downloads/test/DRiLLS-segmented-updates",
+  "worktree_mode": "git fallback: managed tool returned Not a git repository",
+  "validated_at": "2026-09-27T17:54:24.388862+00:00",
+  "elapsed_seconds": 16.788311500000002
+}
