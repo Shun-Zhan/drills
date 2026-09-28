@@ -17,7 +17,7 @@
 .tools/conda-env/bin/python -B -m unittest discover -s experiments/four-step-lr -p 'test_*.py'
 .tools/conda-env/bin/python -B -u experiments/four-step-lr/run.py
 .tools/conda-env/bin/python -B -u experiments/four-step-lr/evaluate.py
-.tools/conda-env/bin/python -B experiments/four-step-lr/analyze.py
+.tools/conda-env/bin/python -B experiments/four-step-lr/reporting/finish.py
 .tools/conda-env/bin/python -B experiments/four-step-lr/check.py
 ```
 
@@ -29,6 +29,7 @@
 - `report.md`：中文结论、全部十个训练种子的独立评估结果、适用范围和局限。
 - `training.csv`、`evaluation.csv`、`evaluation-by-seed.csv`：搜索与独立策略评估原始汇总。
 - `diagnostics.csv`、`diagnostic-pairs.csv`、`diagnostics.svg`：逐轮权重方差及固定探针策略熵。
+- `evaluation-intervals.csv`、`evaluation-pairs.csv`：十次尝试的 Wilson 区间与配对训练种子差值区间。
 - `summary.json`、`validation.json`、`analysis-provenance.json`：统计、验证和哈希。
 
 原始模型、逐轨迹日志、最佳网表及过程日志保存在 Git 忽略的 `results/four-step-lr/`。在另一台机器
