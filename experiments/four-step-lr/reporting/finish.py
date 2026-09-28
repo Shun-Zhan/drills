@@ -84,13 +84,57 @@ def main():
 
     report_path = SUITE / 'report.md'
     report = report_path.read_text()
+    training_by = {(row['circuit'], row['group']): row for row in summary['training']}
+    evaluation_by = {(row['circuit'], row['policy']): row for row in summary['evaluation']}
+    diagnostics_by = {(row['circuit'], row['metric']): row for row in summary['final_diagnostics']}
+    variance_increased = all(diagnostics_by[circuit, metric]['paired_delta_mean'] > 0
+                             for circuit in ('int2float', 'i2c', 'max')
+                             for metric in ('actor_weight_variance', 'critic_weight_variance'))
+    entropy_decreased = all(diagnostics_by[circuit, 'entropy']['paired_delta_mean'] < 0
+                            for circuit in ('int2float', 'i2c', 'max'))
+    observations = [
+        '## 主要观察', '',
+        ('三个电路中，0.01 相对 0.001 的最终 Actor/Critic 权重方差配对均值均上升，'
+         '固定探针策略熵均下降。' if variance_increased and entropy_decreased else
+         '两档学习率的最终权重方差和固定探针策略熵见下方逐电路配对数据。') +
+        '这些参数变化本身不能证明策略表现改善。', '',
+        f'int2float 的训练搜索平均 LUT 差距在 0.001 和 0.01 下分别为 '
+        f'{training_by["int2float", "lr001"]["mean_gap"]:.1f} 与 '
+        f'{training_by["int2float", "lr010"]["mean_gap"]:.1f}；独立评估的'
+        f'种子最佳 LUT 平均差距分别为 '
+        f'{evaluation_by["int2float", "lr001-final"]["mean_seed_best_gap"]:.1f} 与 '
+        f'{evaluation_by["int2float", "lr010-final"]["mean_seed_best_gap"]:.1f}，'
+        '两档最终策略都没有命中四步最优。', '',
+        f'训练搜索中，i2c 的平均最优 LUT 差距从 '
+        f'{training_by["i2c", "lr001"]["mean_gap"]:.1f} 降到 '
+        f'{training_by["i2c", "lr010"]["mean_gap"]:.1f}，最优命中从 '
+        f'{training_by["i2c", "lr001"]["hits"]}/10 变为 '
+        f'{training_by["i2c", "lr010"]["hits"]}/10；但冻结策略每模型10次评估的'
+        f'种子最佳 LUT 平均差距从 '
+        f'{evaluation_by["i2c", "lr001-final"]["mean_seed_best_gap"]:.1f} 变为 '
+        f'{evaluation_by["i2c", "lr010-final"]["mean_seed_best_gap"]:.1f}，'
+        '两档都没有命中四步最优。训练期搜索收益未在这组独立尝试中得到支持。', '',
+        f'max 的训练搜索中，0.001 有 {training_by["max", "lr001"]["feasible"]}/10 '
+        f'个可行种子、{training_by["max", "lr001"]["hits"]}/10 个命中最优；'
+        f'0.01 分别为 {training_by["max", "lr010"]["feasible"]}/10 和 '
+        f'{training_by["max", "lr010"]["hits"]}/10。冻结评估中两档最终策略'
+        f'分别只有 {evaluation_by["max", "lr001-final"]["feasible"]}/100 和 '
+        f'{evaluation_by["max", "lr010-final"]["feasible"]}/100 次可行，'
+        f'初始权重与随机策略各为 {evaluation_by["max", "initial"]["feasible"]}/100 和 '
+        f'{evaluation_by["max", "uniform"]["feasible"]}/100。'
+        '在这十次尝试的分辨率下，不能把训练时命中最优解释为冻结策略已稳定掌握可行序列。', '',
+    ]
+    training_marker = '## 训练期间搜索（250轮，含每轮初始映射）'
+    if report.count(training_marker) != 1:
+        raise ValueError('Training section insertion point is missing or duplicated.')
+    report = report.replace(training_marker, '\n'.join(observations) + '\n' + training_marker)
     marker = '## 复核与局限'
     if report.count(marker) != 1:
         raise ValueError('Report insertion point is missing or duplicated.')
     zero = wilson(0)
     full = wilson(10)
     section = [
-        '### 十次独立尝试的不确定性', '',
+        '## 十次独立尝试的不确定性', '',
         '每个固定模型的可行率和最优命中率按10次尝试计算双侧 Wilson 95% 区间；'
         '全部逐种子区间见 [evaluation-intervals.csv](evaluation-intervals.csv)。'
         f'即使观察到 0/10，区间仍为 [{zero[0]:.3f}, {zero[1]:.3f}]；'
