@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/Users/zhan/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/Users/zhan/Downloads/test/DRiLLS-segmented-updates/experiments/segmented-updates/plot.py"
+  ],
+  "source": "65ce7afad8470a652f03b6ef8c3e73a2e3f0567ff8f78379568fd35b52272444",
+  "source_training_rows": 18018,
+  "source_evaluation_bank_rows": 32,
+  "hashes": {
+    "search-curves.csv": "77a3e0e91da1df482caed7aac5d0fbb2b3a13669f7ec2dea538212d61a264197",
+    "evaluation-means.csv": "0873cf4d8a8e0da114bc2e196e7a5cb26a081a643a59e045c6cf5bc810b7eecf",
+    "plot.py": "65ce7afad8470a652f03b6ef8c3e73a2e3f0567ff8f78379568fd35b52272444",
+    "search-curves.svg": "86b3dc66904baa22ac4aac9e3025e1d13a1844271388c1136399cd1a4ba66563",
+    "search-curves.png": "a296bc309f4a8020633253747695b717b7b50afd6049082bddd49577c658bbde",
+    "evaluation-comparison.svg": "3bf3d3addbdd3c0783b1c631786c0eff56a62f1263872d8c176d9cf5db207828",
+    "evaluation-comparison.png": "d0fea30ed67dbd5ec7eb8ae882cfcea7f84ff0383b4b9680d2c6ada33c9e04db"
+  },
+  "status": "rendered"
+}

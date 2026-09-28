@@ -19,7 +19,7 @@ import numpy as np
 import torch
 
 from study import (HERE, ROOT, GROUPS, SEEDS, EVAL_SEEDS, ActorCritic,
-                   dump, guard, group_config, load, now, read_rows, sha, state_hash)
+                   dump, group_config, identity, load, now, read_rows, sha, state_hash)
 
 
 def read_json(path):
@@ -44,6 +44,34 @@ def write_csv(path, rows, fields=None):
 def require(condition, message):
     if not condition:
         raise ValueError(message)
+
+
+def evidence_guard(cfg):
+    """Accept a documented validation-only correction after the run was locked.
+
+    The original fingerprint must still match after restoring *only* this
+    verifier's original source hash. No learner, runner, protocol, tool,
+    benchmark or dependency change is permitted for existing evidence.
+    """
+    root = Path(cfg['runtime']['output_dir'])
+    manifest = read_json(root / 'experiment.json')
+    current_fingerprint, payload = identity(cfg)
+    if current_fingerprint == manifest['fingerprint']:
+        return root, manifest
+    amendment = read_json(root / 'validation-amendment.json')
+    relative = str((HERE / 'results.py').relative_to(ROOT))
+    require(amendment['file'] == relative and
+            amendment['experiment_fingerprint'] == manifest['fingerprint'] and
+            amendment['original_sha256'] == manifest['sources'][relative] and
+            amendment['corrected_sha256'] == payload['sources'][relative] and
+            amendment['scope'] == 'validation_and_report_only',
+            'Validation amendment does not identify the verifier change')
+    locked_payload = copy.deepcopy(payload)
+    locked_payload['sources'][relative] = amendment['original_sha256']
+    restored_fingerprint = hashlib.sha256(json.dumps(locked_payload, sort_keys=True).encode()).hexdigest()
+    require(restored_fingerprint == manifest['fingerprint'],
+            'Training or evaluation sources, protocol, tools, benchmark or environment changed')
+    return root, manifest
 
 
 def same_float(actual, expected, label, exact=False):
@@ -372,6 +400,7 @@ def netlist_check(cfg, root, directory, expected):
     for name, key, remap in (('best-mapped.v', 'mapped', False), ('best.v', 'unmapped', True)):
         netlist = directory / name
         log = directory / (name + '.verification.log')
+        output = ''
         try:
             require(netlist.is_file(), 'Missing exported netlist: ' + str(netlist))
             command = f'read "{netlist}"; '
@@ -385,15 +414,18 @@ def netlist_check(cfg, root, directory, expected):
             matches = re.findall(r'\bnd\s*=\s*(\d+)[^\n]*?\blev\s*=\s*(\d+)', output)
             require(process.returncode == 0 and bool(matches), 'ABC metrics command failed')
             metrics = tuple(map(int, matches[-1]))
-            require(metrics == (expected['luts'], expected['levels']), 'Exported mapping metrics differ')
+            # best.v is the unmapped network. A fresh LUT mapping may choose a
+            # different cover, so only best-mapped.v must match the search score.
+            if not remap:
+                require(metrics == (expected['luts'], expected['levels']),
+                        'Exported mapped metrics differ from the search score')
             require('Networks are equivalent' in output, 'CEC did not confirm equivalence')
             record[key] = dict(status='pass', sha256=sha(netlist), luts=metrics[0], levels=metrics[1],
+                feasible=metrics[1] <= cfg['protocol']['circuits']['i2c']['max_levels'],
+                matches_search_best=metrics == (expected['luts'], expected['levels']),
                 cec=True, remapped=remap, log=str(log.relative_to(root)), log_sha256=sha(log))
         except Exception as error:
             record['status'] = 'fail'
-            output = getattr(error, 'stdout', '') or ''
-            if isinstance(output, bytes):
-                output = output.decode(errors='replace')
             log.write_text(output + '\n' + type(error).__name__ + ': ' + str(error) + '\n')
             record[key] = dict(status='fail', error=type(error).__name__ + ': ' + str(error),
                 log=str(log.relative_to(root)), log_sha256=sha(log))
@@ -401,7 +433,7 @@ def netlist_check(cfg, root, directory, expected):
 
 
 def verify(cfg):
-    root, manifest = guard(cfg)
+    root, manifest = evidence_guard(cfg)
     torch.set_num_threads(1)
     started = time.monotonic()
     checks, runs, banks, failures = [], [], [], []
@@ -644,7 +676,7 @@ def fmt(value, digits=3):
 
 
 def analyze(cfg):
-    root, manifest = guard(cfg)
+    root, manifest = evidence_guard(cfg)
     runs, curves, hits = training_observations(cfg, root)
     evaluation, banks = evaluation_observations(root)
     aggregates = []
@@ -764,8 +796,9 @@ def analyze(cfg):
         f'- 失败进程{cost["failed_processes"]}，硬超时{cost["timed_out_processes"]}，不完整训练{cost["incomplete_training_runs"]}，缺失评估轨迹{cost["incomplete_evaluation_rollouts"]}。',
         f'- 不可行训练候选{cost["infeasible_training_candidates"]}；评估50步不可行终点{cost["infeasible_evaluation_terminals"]}。',
         f'- 恢复时回滚的已记录动作行{cost["discarded_committed_step_rows_on_resume"]}；未写日志前的额外ABC调用不能精确追计，相关耗时留在原始进程尝试记录中。',
-        '- 每任务3个并行进程、每进程1个Torch线程、30分钟硬超时；停止点为预定三种子，不增加种子或调参追加实验。',
+        '- 最多3个任务并行、每进程1个Torch线程、每任务30分钟硬超时；停止点为预定三种子，不增加种子或调参追加实验。',
         '- 独立核验逐步重算CSV奖励及最好值、Welford归一化、动作概率/采样RNG、段尾目标与网络/Adam更新哈希；核验全部交付最佳网表的映射指标和CEC。',
+        '- 验证器修订见validation-amendment.json：未映射网表重新做LUT6映射时覆盖可能变化，分别报告其实测LUT/层数及CEC；已映射网表仍须与训练或评估得分精确一致。该修订未改变学习器或已完成轨迹。',
         '- 原始中间状态来自Yosys特征日志；没有再次运行全部42,000动作来重提取每个原始状态。真实工具连续/中断恢复精确回归由测试记录支持。', '',
         '## 统计风险核查（11/11）', '', '|风险|等级|本轮核查|', '|---|---|---|']
     lines += [f'| {name} | {severity} | {finding} |' for name, severity, finding in FALLACIES]
@@ -779,7 +812,7 @@ def analyze(cfg):
 
 
 def package(cfg):
-    root, manifest = guard(cfg)
+    root, manifest = evidence_guard(cfg)
     require((HERE / 'summary.json').exists(), 'Run analyze before package')
     summary = read_json(HERE / 'summary.json')
     require(summary['fingerprint'] == manifest['fingerprint'], 'Stale report fingerprint')

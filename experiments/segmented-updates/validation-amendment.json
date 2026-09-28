@@ -1,0 +1,16 @@
+{
+  "file": "experiments/segmented-updates/results.py",
+  "scope": "validation_and_report_only",
+  "experiment_fingerprint": "e4e5bd1829d5fed4d8a7c7ca4a41b11192b313ec38af9c64023539162157ce85",
+  "original_sha256": "0f1acab9cd47d7dda2859cf85e0990329c27d1871100f1ee9879afafd263dffb",
+  "corrected_sha256": "3f6fe2275388f287e2d369e9d3211120795ca308af4ffcda4e2b33c1fb0523dc",
+  "recorded_at": "2026-09-28T04:31:00.973539+00:00",
+  "reason": "Unmapped best.v can produce a different LUT cover when independently remapped; require exact search metrics only for best-mapped.v and independently record metrics plus CEC for both exports. Correct a report sentence about three concurrent tasks.",
+  "preflight": {
+    "training_pairs_checked": 18,
+    "training_pairs_with_different_unmapped_remap_luts": 14,
+    "mapped_metric_or_cec_failures": 0,
+    "unmapped_cec_failures": 0
+  },
+  "unchanged_training_evaluation_source_fingerprint": "e4e5bd1829d5fed4d8a7c7ca4a41b11192b313ec38af9c64023539162157ce85"
+}

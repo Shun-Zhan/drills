@@ -1,0 +1,115 @@
+{
+  "fingerprint": "e4e5bd1829d5fed4d8a7c7ca4a41b11192b313ec38af9c64023539162157ce85",
+  "generated_at": "2026-09-28T04:35:35.349004+00:00",
+  "artifacts": {
+    "experiments/segmented-updates/README.md": {
+      "sha256": "bcd2a2c8cb11714766f726ef9c60070b5fee9e9c856641cc0de421e14f9934f3",
+      "bytes": 4064
+    },
+    "experiments/segmented-updates/check.py": {
+      "sha256": "ec3f301ad5d6646ef5dc9cfd0e78cedce779fbe3da4257b5e361074f5e919f7b",
+      "bytes": 1178
+    },
+    "experiments/segmented-updates/evaluation-comparison.png": {
+      "sha256": "d0fea30ed67dbd5ec7eb8ae882cfcea7f84ff0383b4b9680d2c6ada33c9e04db",
+      "bytes": 50254
+    },
+    "experiments/segmented-updates/evaluation-comparison.svg": {
+      "sha256": "3bf3d3addbdd3c0783b1c631786c0eff56a62f1263872d8c176d9cf5db207828",
+      "bytes": 14017
+    },
+    "experiments/segmented-updates/evaluation-means.csv": {
+      "sha256": "0873cf4d8a8e0da114bc2e196e7a5cb26a081a643a59e045c6cf5bc810b7eecf",
+      "bytes": 3158
+    },
+    "experiments/segmented-updates/evaluation.csv": {
+      "sha256": "1a5789da6f8a2c3951a136bb3e8401377160136e3d3e920c9123319a270402db",
+      "bytes": 79667
+    },
+    "experiments/segmented-updates/isolation-validation.json": {
+      "sha256": "ac4279f8a7a14f19574f3af4714d68afdb07f9fc89f338d0cbe049518fd0f43e",
+      "bytes": 482
+    },
+    "experiments/segmented-updates/isolation.py": {
+      "sha256": "ba04370ca3dcf937b41f8af81eba4656285f5ec62e95d7c9076803dbcc947d45",
+      "bytes": 1923
+    },
+    "experiments/segmented-updates/model-manifest.json": {
+      "sha256": "1e55d12580cee7006f6fcbd3130d6e1e3b29c246e32af886c199387986a1c859",
+      "bytes": 21019
+    },
+    "experiments/segmented-updates/plot-validation.json": {
+      "sha256": "c54f1e50e9e38d901bf356c34670b95bf3040692b76675a39c5a1da7ae6fab2d",
+      "bytes": 1076
+    },
+    "experiments/segmented-updates/plot.py": {
+      "sha256": "65ce7afad8470a652f03b6ef8c3e73a2e3f0567ff8f78379568fd35b52272444",
+      "bytes": 8160
+    },
+    "experiments/segmented-updates/protocol.yml": {
+      "sha256": "6ad35991f5c3c270cdbe3bf8d9d02a8b4e71b64147da118ad3caf631d1616f51",
+      "bytes": 2716
+    },
+    "experiments/segmented-updates/report.md": {
+      "sha256": "633dce69342116ec30b8c48195e975eff8781d8148ff55614293dab3bf792e64",
+      "bytes": 10868
+    },
+    "experiments/segmented-updates/results.py": {
+      "sha256": "3f6fe2275388f287e2d369e9d3211120795ca308af4ffcda4e2b33c1fb0523dc",
+      "bytes": 60749
+    },
+    "experiments/segmented-updates/run.py": {
+      "sha256": "2ded67984292bb8e4537e6a5364440561fed0768b5fb31d982c0ac3d9f20a3e2",
+      "bytes": 2850
+    },
+    "experiments/segmented-updates/search-curves.csv": {
+      "sha256": "77a3e0e91da1df482caed7aac5d0fbb2b3a13669f7ec2dea538212d61a264197",
+      "bytes": 376487
+    },
+    "experiments/segmented-updates/search-curves.png": {
+      "sha256": "a296bc309f4a8020633253747695b717b7b50afd6049082bddd49577c658bbde",
+      "bytes": 67189
+    },
+    "experiments/segmented-updates/search-curves.svg": {
+      "sha256": "86b3dc66904baa22ac4aac9e3025e1d13a1844271388c1136399cd1a4ba66563",
+      "bytes": 316413
+    },
+    "experiments/segmented-updates/study.py": {
+      "sha256": "1dc81937c01cc51140fb783e4ab3d367826942135a94313e752330eb884e0fb1",
+      "bytes": 15263
+    },
+    "experiments/segmented-updates/summary.json": {
+      "sha256": "2c274b849f2abbd4e77b60148e473510d702e52eaccf6726888340819957f507",
+      "bytes": 77799
+    },
+    "experiments/segmented-updates/target-hits.csv": {
+      "sha256": "7b1f2ba02468c72f62010fb5ee6fb8255353ba8f8eda989dc9ca9e157dda9c20",
+      "bytes": 761
+    },
+    "experiments/segmented-updates/test-results.json": {
+      "sha256": "25b05051b6a671014d8cb438da6528e0e298e2ddfc6ebb92929f4dd271669aee",
+      "bytes": 2114
+    },
+    "experiments/segmented-updates/tests.log": {
+      "sha256": "872067c125c9374190036bcd1fdabf7a455a24e3d041eae9df2918641aabf30b",
+      "bytes": 2041
+    },
+    "experiments/segmented-updates/training-means.csv": {
+      "sha256": "e0645b6f3faeb290e0dcb9b37416ed16f8fb8e2885f5106659c0fc2f641d6119",
+      "bytes": 499
+    },
+    "experiments/segmented-updates/training.csv": {
+      "sha256": "be18fae2fd7385de3903df2e1572eb9d619060ff648afbe2fb786138556e8373",
+      "bytes": 5415
+    },
+    "experiments/segmented-updates/validation-amendment.json": {
+      "sha256": "09f58b5850eb49523166209345a0fb6bbbb1d94250edf8d816fa71cb6da59b26",
+      "bytes": 998
+    },
+    "experiments/segmented-updates/verification.json": {
+      "sha256": "d1360870fa496bf8166817d82f8d024bdf2815df0b71e811bbbe270badad80a0",
+      "bytes": 1812422
+    }
+  },
+  "report_status": "complete_verified"
+}
