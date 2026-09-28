@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "fingerprint": "dd3f70044c3521db5d7788f3949524aa0d1c916a94a5fecbeecab62de53f3d49",
+  "four_step": {
+    "i2c": {
+      "metric": "expected_gap",
+      "window_mean": 14.418023244050369,
+      "reward_mean": 4.162373341749357,
+      "initial_mean": 20.49580216622462,
+      "uniform_theory": 20.695963717386082,
+      "uniform_optimal_theory": 0.00166597280935268,
+      "improved_seeds": 10,
+      "interval": {
+        "mean": 10.255649902301013,
+        "bootstrap95": [
+          7.905402835998462,
+          12.84370916539314
+        ],
+        "paired_t95": [
+          7.223889805432215,
+          13.28740999916981
+        ]
+      },
+      "passed": true
+    },
+    "max": {
+      "metric": "feasible_probability",
+      "window_mean": 5.788528361344525e-05,
+      "reward_mean": 0.44525002030908717,
+      "initial_mean": 0.01284457466917914,
+      "uniform_theory": 0.010828823260792415,
+      "uniform_optimal_theory": 0.00791337084442523,
+      "improved_seeds": 10,
+      "interval": {
+        "mean": 0.4451921350254738,
+        "bootstrap95": [
+          0.25338047950597437,
+          0.6439985417717181
+        ],
+        "paired_t95": [
+          0.20849850114191398,
+          0.6818857689090336
+        ]
+      },
+      "passed": true
+    },
+    "int2float": {
+      "metric": "expected_gap",
+      "window_mean": 3.6576582898082557,
+      "reward_mean": 2.8135554712480277,
+      "initial_mean": 4.216773071312865,
+      "uniform_theory": 4.228238990137088,
+      "uniform_optimal_theory": 0.00083298640467634,
+      "improved_seeds": 8,
+      "interval": {
+        "mean": 0.8441028185602282,
+        "bootstrap95": [
+          0.35974225639889207,
+          1.29848197393993
+        ],
+        "paired_t95": [
+          0.262448181481827,
+          1.4257574556386294
+        ]
+      },
+      "passed": null
+    }
+  },
+  "gates": {
+    "i2c": {
+      "passed": true,
+      "improved_seeds": 10,
+      "metric": "expected_gap"
+    },
+    "max": {
+      "passed": true,
+      "improved_seeds": 10,
+      "metric": "feasible_probability"
+    }
+  },
+  "ten_step": "complete"
+}

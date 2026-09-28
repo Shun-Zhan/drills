@@ -1,0 +1,2896 @@
+{
+  "fingerprint": "dd3f70044c3521db5d7788f3949524aa0d1c916a94a5fecbeecab62de53f3d49",
+  "checks": {
+    "parity_seed_matches": 10,
+    "pilot": "pass",
+    "four_exact_rows": 360,
+    "reused_ten_baselines": 12,
+    "historical_best_netlists_cec": 22,
+    "ten_rows": 40,
+    "best_netlists_cec": 100,
+    "historical_source_drift": [
+      "drills/model.py"
+    ]
+  },
+  "runs": [
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "i2c",
+      "seed": 0,
+      "source": "historical-verified",
+      "result_sha256": "fd7cfaa4e4652cd754e3d26784f6dd9c14664624c71639beff7ab8c9e34ce0cd",
+      "best_mapped_sha256": "72d91a9a763ae85157008267ea8c2ba6be11fcb7e5c6809c17d033c3ddaabd55",
+      "equivalence_log_sha256": "ec944d0138d3222611caa28cd5ba74b7c330b90550cf0fc6569ee3d9d99f2a98",
+      "final_network_sha256": "586ae8ba52776751cbdca5bab4464f3bd9d94a46fd4373d8bfb242cd33d0ae7a",
+      "best": {
+        "luts": 316,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub",
+          "rewrite -z",
+          "balance",
+          "resub"
+        ],
+        "episode": 111,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "i2c",
+      "seed": 1,
+      "source": "historical-verified",
+      "result_sha256": "d41ebe18c48772f2ead3ee4a7966606c534984c6cde80b3f77c821fa1e3b859c",
+      "best_mapped_sha256": "0740243be2e3911c0e660b7eb9d48af4c1c35253c6b805ac1e8da60a857d0cb0",
+      "equivalence_log_sha256": "bbcc5cc82e465bb31188351b9577c74f99ff30796dce37cc3879acc0baef9744",
+      "final_network_sha256": "242f19cfd1c893cdb3e112bba507b254d8ccbc7b6e3388203f0b4495090e64ae",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "rewrite -z"
+        ],
+        "episode": 156,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "i2c",
+      "seed": 2,
+      "source": "historical-verified",
+      "result_sha256": "a57e2d48d98cabadb950226ad27338d24372dabeb674e09643876541a80989be",
+      "best_mapped_sha256": "5b79d1d9bc3974b3938158bb0cc6aae2a007132bb3647962a935ee9a4978e5c1",
+      "equivalence_log_sha256": "0ad0c40e51313f1052e95dd1bb7dd084af00642b00be7d56af73613662a6b8c7",
+      "final_network_sha256": "9f6dd9e1cf85b703abf7e11d7d34fbb647919300aa75ed0cca87a177f2a0668f",
+      "best": {
+        "luts": 313,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 35,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "i2c",
+      "seed": 3,
+      "source": "historical-verified",
+      "result_sha256": "440dba9559735b960c30b45a28986d20f995dd44511ec2177d288743a449ae9c",
+      "best_mapped_sha256": "db6f0810d50f9e54a64d5753bee5c7811f43083cf787224d19bbd9e267b0e175",
+      "equivalence_log_sha256": "59028ee875a3429fd3cabae034e87be47207f750bce1daaadc3bef4291eb6b16",
+      "final_network_sha256": "518c48d753bc8309ad90ded3faeaa609faa96b0e9cf7180b215c4f1e0c845447",
+      "best": {
+        "luts": 313,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 36,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "i2c",
+      "seed": 4,
+      "source": "historical-verified",
+      "result_sha256": "7d1e83d5c4f2fae2b4d77bc9957b06312ef2dadb57d72430ce8e96ca3469a381",
+      "best_mapped_sha256": "b1b1ec353635db95c2f1533be4fbb83933ce1b9274636eb6bdba539ee3f7da15",
+      "equivalence_log_sha256": "844ed903709f471e2cd82a8f55bcc498dea16026ef63e8e8e3d956ae2c7ce269",
+      "final_network_sha256": "037d77888347bf096d26ab0e6f71dbb8f5f5b9f60a90fef9947b93334ce36c81",
+      "best": {
+        "luts": 313,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 81,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "i2c",
+      "seed": 5,
+      "source": "historical-verified",
+      "result_sha256": "36937be1a4ff81bbfab43f65a3c4731108722c9cc38bebd46db1ca5c09a7626a",
+      "best_mapped_sha256": "d797740a2a50d8bfee3278f8f6810e531db42bf4c55fb9b66e601bcc1e8c8b3f",
+      "equivalence_log_sha256": "777bee99776d55948bccc3539c6b36a409581a63d71663807204f3faadc4d1b5",
+      "final_network_sha256": "0fc10d94e332cb1a649ac9eed2a1d3cb09a909375fb82c6357ded5fd8c7189b8",
+      "best": {
+        "luts": 313,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 36,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "i2c",
+      "seed": 6,
+      "source": "historical-verified",
+      "result_sha256": "46f75061c2e273400b00a239e2cc0b35db736dd95518f34b6b9f7bc7bca4025a",
+      "best_mapped_sha256": "123a7446d0c2a3cc3d28a791327633c23eb704d1f13ad84a230bc6d188f6f46b",
+      "equivalence_log_sha256": "7962cbc3d081ef4d291702c78f59301deee4d07447ff8eb7f1178a26f2f75cd8",
+      "final_network_sha256": "47c135265fa2127d8cdc9d638ffe39cc021c63a125c9f324a9e891b8101bc249",
+      "best": {
+        "luts": 317,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor",
+          "resub",
+          "rewrite -z"
+        ],
+        "episode": 77,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "i2c",
+      "seed": 7,
+      "source": "historical-verified",
+      "result_sha256": "95faa8834d4ac17e42f1c4ec25affea2154d1e92550b33c1319b9393d9f9740a",
+      "best_mapped_sha256": "75186a283096882ccbbc224e1083cc47cdc1af9ac9730e03cea4d11fc2b9d211",
+      "equivalence_log_sha256": "35ab4d61801d675eb9e4c4afbbc7132695e8ffd3f3cab74363bce4ddc6f8df3c",
+      "final_network_sha256": "d8b8f8b8ceae35cbfa18689d9d121630b83964182a0e68b817080f4129ac5ea5",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub -z",
+          "rewrite -z"
+        ],
+        "episode": 164,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "i2c",
+      "seed": 8,
+      "source": "historical-verified",
+      "result_sha256": "b9397b9d1190fd7497070e8f4b5ed4e0ac0576f0155429ea7df1304a07d56273",
+      "best_mapped_sha256": "2ed0b23a9d8ce785e7beea3af2dda5ca1eb5d5e621a9069a23805f1d07966e12",
+      "equivalence_log_sha256": "f0452338bed90155e62322d202b62ba076e688f4d8b5dd01b5d53d7dcd903824",
+      "final_network_sha256": "9bcc542d4098137e2e84cfe624d88d906dcf5907c8d56aeb6078b4a48ef194f3",
+      "best": {
+        "luts": 313,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 94,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "i2c",
+      "seed": 9,
+      "source": "historical-verified",
+      "result_sha256": "db02668eecea08b3c5add09a57f8d7cf65e0b73b209f839febe1814c5360aad7",
+      "best_mapped_sha256": "0bd750630c0275b86d5aac2e3ee23aa1336f21806fc501e78abd92368042a220",
+      "equivalence_log_sha256": "21407f9095f6ef3da77e3494b317116281cefb9575e4e536ef37a9becfe04f37",
+      "final_network_sha256": "7ce7a6c09cbe037ef2762d48b1b82135d1ec98b8099d10428085a6729c5ddd43",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite"
+        ],
+        "episode": 48,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 0,
+      "source": "new",
+      "result_sha256": "7de0bb6a1a465a5696f0134f25586fab01becab111111911c39287b54200d356",
+      "best_mapped_sha256": "8ee1cb396395d086629eced470926c997453957b632486b6121423bf030a7ba9",
+      "equivalence_log_sha256": "624fe17f1329fc884c689490c263e6c85423532c169568e35fedd321e9cbe5dc",
+      "final_network_sha256": "bf2f0d6d72c28e493ab8fc5d325fd956445ea31d1ee306159e0b7644236c40c0",
+      "best": {
+        "luts": 313,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 28,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 1,
+      "source": "new",
+      "result_sha256": "00c219a54c612b89c411decef098c06cbfa078fbadc3842321d8b917835f07e5",
+      "best_mapped_sha256": "207e72fbf950529107a98e878d7a0e65539c60dade387ae72fa8cd4add0795ff",
+      "equivalence_log_sha256": "4172e398804ae40f4c90f5cdcd884058f4c8de0b451d40080f9ba9286967063c",
+      "final_network_sha256": "f327110e5bf759d6a7736f4e72c0e49e9d64072b282b418e4bcabd3a0681b4e8",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "rewrite -z"
+        ],
+        "episode": 45,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 2,
+      "source": "new",
+      "result_sha256": "56fe3be01a7e09102d4dabd50de2468cef7105e870a52c92a32eb29852634a3d",
+      "best_mapped_sha256": "207e72fbf950529107a98e878d7a0e65539c60dade387ae72fa8cd4add0795ff",
+      "equivalence_log_sha256": "1c2ad41323f8bcd1ac0e72486af9988345c730adb1bf01f9b2f9ff25d5477070",
+      "final_network_sha256": "34eb6a2a68209bf7b5f030039ac2c0677213259db6f45be997536d3d0ea34b5d",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub -z",
+          "rewrite -z"
+        ],
+        "episode": 100,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "49240c15ea8d25993bb31f82d2fd1deb4c191bec1d1e74ad1a8df72e8c0bd0ec",
+      "best_mapped_sha256": "5d773d4cac217545b12e598ee4c2dd866192f9aced84ea538ba5ca67a9b60b48",
+      "equivalence_log_sha256": "d48fdba13c6dfbe13d3b1ad64723f36440a2ec8203399c04070d8686b72b93c3",
+      "final_network_sha256": "8ccbd53e0e96d2fc60d93a01a11c3e517ff043a480991b69f74472fcbb7779ee",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "rewrite -z"
+        ],
+        "episode": 64,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "3d699fb0d6cd7e58f2729a62dcb2ec1ec87487f34636093f5d9dd1192c98329c",
+      "best_mapped_sha256": "3567034e6f55581045808232e26a7782ffedefc5391f01ed1b61955418fcd62d",
+      "equivalence_log_sha256": "d3bb179bb15b49b9645f6ef388f49e654f6313d288b0067c784bbd40ec24260a",
+      "final_network_sha256": "4ab58506134f6f43eb382a7853222cda71867c2e5cea367e9667ca041758b36c",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub -z",
+          "rewrite -z"
+        ],
+        "episode": 114,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 5,
+      "source": "new",
+      "result_sha256": "3dd08919adeb0f828e8a7a5a60379f4ac4d5958d70e48ce6d36413042bbfd377",
+      "best_mapped_sha256": "3567034e6f55581045808232e26a7782ffedefc5391f01ed1b61955418fcd62d",
+      "equivalence_log_sha256": "b7c6fe4cc90a8dbc05d6b471a69565f9c3a3002a8d90db647027b77ac9b448f5",
+      "final_network_sha256": "4140da4c762ae21320cc65d16e20b8ef5530c3bc4a88ab1e1f3b469fb5e484b7",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "rewrite -z"
+        ],
+        "episode": 40,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 6,
+      "source": "new",
+      "result_sha256": "bc6037408df1ba14efd111d03edccc9c22a9f55a88dc9fcfea3bea4a5f644452",
+      "best_mapped_sha256": "951027ea1b88d2b3b305abfec21ac5f85c3362a3d1031419a17b6b28ff7a1e66",
+      "equivalence_log_sha256": "acdedcc76491c4cd1c79feb439c46e075ac083aa200bff371bfb8c1291401a97",
+      "final_network_sha256": "b13ab72512ab24742001e3516b793e8361ca5b8ac5d5ff3d2a57251f6da32060",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "rewrite -z"
+        ],
+        "episode": 91,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 7,
+      "source": "new",
+      "result_sha256": "c7064e67a62b35947af1fa2e26a13d7c2884d561b03c36ab51ce7bec56d782b9",
+      "best_mapped_sha256": "98322bf2e382f22ef1c2a884d3d9c7f68fd746655871468b537f09e2479c5f15",
+      "equivalence_log_sha256": "19c3ba3e25e5bedae9e188527ade6f29ceb6a698117557e06555f1d6820bc16b",
+      "final_network_sha256": "448a42ff1ddb4edfffd3f6b3ff7e650f843dbae1db53bbf7d521f2e0ca41b132",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "rewrite -z"
+        ],
+        "episode": 136,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 8,
+      "source": "new",
+      "result_sha256": "6d6f115693199344d2e3a588bdbe94eef3a80634862db8fc1b989c66d7af606c",
+      "best_mapped_sha256": "41aa0394fe207277d63ee8cf0798991dd457fc0371d60bbe3a7207676ee188b6",
+      "equivalence_log_sha256": "1bf888f6eed78173e1fef06fe06eb849a5445a819f2eca1ed31c65c9530e2627",
+      "final_network_sha256": "e1ff9a3005c87d9ea5b2275005cf8852cf2dfd6f3cc6b295df9ae3d95c87ef15",
+      "best": {
+        "luts": 313,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 32,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 9,
+      "source": "new",
+      "result_sha256": "389bc2026fd77526c4b65f3cf5122ff51ebee4e6c3b1bdf8e00d13fe6cea5a9a",
+      "best_mapped_sha256": "a62b7e2708b8c781aea0cfea7395c4ef0d4e9ff6944dcb7d04421fd370aea97a",
+      "equivalence_log_sha256": "7ae4532e2f8363a368de88141eb3ed3e633073dba37a14e54ac3b94f873fd4f6",
+      "final_network_sha256": "ea4b02b5ffc18f87d9ac3a13e6fdec73a9cdfc8621efec513c136432b07718ff",
+      "best": {
+        "luts": 312,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite"
+        ],
+        "episode": 48,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "max",
+      "seed": 0,
+      "source": "new",
+      "result_sha256": "3c78142095c2ade8f0fd4c9244576cc50156489e08a487b9f45fd68eb25ddc4c",
+      "best_mapped_sha256": "5e1413ec5752b256b96f0f6b737a5099a0dd7ed4a43b0517727923fccbabc177",
+      "equivalence_log_sha256": "be369ddcec35529c8e63381444b9784d389b32d2bb2c706f5d50fa3e5cf1b3cb",
+      "final_network_sha256": "297140e38244ed93c3d096fb46a4c7126c64dc552571a5b05101933ff64c66c7",
+      "best": {
+        "luts": 790,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 67,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "max",
+      "seed": 1,
+      "source": "new",
+      "result_sha256": "aedfb84b5cd7bd00ab6653141d8b3b160f4cac835c0e5d4d66d8bd1a1f3cb4e0",
+      "best_mapped_sha256": "3c55f134c5eadd6264e09f1cca74584f05eb0a5020368601aeacbdd67e88c4b8",
+      "equivalence_log_sha256": "8bf654938278d5119b405d2cd0057f15b32d0d55b75993a10655d776ecf850f5",
+      "final_network_sha256": "584e1474105556602f47c951c0b5adfe6900bbd0072a2c8aa47a992f49365927",
+      "best": {
+        "luts": 797,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "balance",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 35,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "max",
+      "seed": 2,
+      "source": "new",
+      "result_sha256": "9800ea9803ac6dbe18da87a2f1f8972ee4bba1021ec3687f33cecd6e0e369153",
+      "best_mapped_sha256": "64db0c3bab9210036d3bb90e3f920159df8118bdaef5b7293b37efad60df59c9",
+      "equivalence_log_sha256": "993f8aa9d46dfc69a000d2d3c3de9411b3ae42e282275b197586b83450ae18ac",
+      "final_network_sha256": "831e1e62cc91886007d09f3bdb50084d264fc8e48df5c6bc39c295f0975abc45",
+      "best": {
+        "luts": 790,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 78,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "max",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "261b729f9d89fc6444481bc79b5bcd8166b81badab78aec87a8acc0f2e2973b3",
+      "best_mapped_sha256": "35a6b43d9e3e88d806d0ee764c38ae58901a767a38a18fecffd9160198e4cd00",
+      "equivalence_log_sha256": "ef9fd818e32703b0c618103112b1a5f4d97408b7c9cf4a965f55430631a42b92",
+      "final_network_sha256": "a21aa1cb26c9b70d6a549768610bea96e5dc1db79469b351d9633623c2203bc5",
+      "best": {
+        "luts": 767,
+        "levels": 42,
+        "feasible": false,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "refactor -z"
+        ],
+        "episode": 44,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "max",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "e5c6d2eadf2397c269018e3076bf9c38e7ad8d3e06858af53f7cece52921f20e",
+      "best_mapped_sha256": "709ab4728e90efa7bc408a7edc296f542ef26c72ed528259a36ed126bcad6514",
+      "equivalence_log_sha256": "f7b348372a6126e3d53db0f9890239ecde587d1ebec80b5347ba69f471cb1481",
+      "final_network_sha256": "5a849c860ea1133dc2a0e0240fc4053ecefef049d147de06bfd5ee23c1abf88b",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 44,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "max",
+      "seed": 5,
+      "source": "new",
+      "result_sha256": "68eee9b8339e000d819a202c146e481469cab2888ec7a82c64948e11d879a0ab",
+      "best_mapped_sha256": "621a14158f0167f1761133948bcb0021ee2fdad4ad49c25ecfb0c3e5f08c94ec",
+      "equivalence_log_sha256": "fd146719e41f3ae74e00b8b22b5d23f3e08bc3d2bc0eef65e0d588e6b515cd1a",
+      "final_network_sha256": "b239434075ee7f0f953390f936ffae892ea19814ab4f77e229b38d7a8c6e1678",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 29,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "max",
+      "seed": 6,
+      "source": "new",
+      "result_sha256": "35059be7d5977e56b01299ae9c018da67dc1d7dfdb2e6fecc078438b720400c9",
+      "best_mapped_sha256": "93a818114228e1a7aea0524ba0542cda9457909fb595182cbbbc26dc2d47b8d2",
+      "equivalence_log_sha256": "3056fc815137e3d0bb74340f6434dba2903a7361b899a09054f856536bc25b0d",
+      "final_network_sha256": "0903e53735932574e2acf94221e0fa51441cc2c7cf3dffab857d001dd01ab46e",
+      "best": {
+        "luts": 790,
+        "levels": 40,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "refactor -z",
+          "balance"
+        ],
+        "episode": 47,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "max",
+      "seed": 7,
+      "source": "new",
+      "result_sha256": "61837411af05b57fa254bdcba1ac554bc5a5733737a4be95c6a88b9e40115cba",
+      "best_mapped_sha256": "e6e990b30abfde84ca69af157e1b5c3ed2902aa7cdbd678d408c7f2a23ac343e",
+      "equivalence_log_sha256": "5b990691d1cbe3ab1cda952b1f402e7190f2b6c1dccecbbdf3428f1628a4f58c",
+      "final_network_sha256": "393957413f2028fda0f0dd99108387f9245ff60dd19d7c89b38da3235585b6e5",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 15,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "max",
+      "seed": 8,
+      "source": "new",
+      "result_sha256": "b10e02a026f186d875d63dd53954c0e3d5fd705753079f260818f0ac8c905ecf",
+      "best_mapped_sha256": "b11d5e4c3275c70f7dcf0d4225d157226a4f48134f060aff8bae7122489be02d",
+      "equivalence_log_sha256": "b8b6aac46d112f6dc8440fd8a9a71dadd3da5fbca31a7c494e96ca40008851de",
+      "final_network_sha256": "8171bd8a8fb2f83086a0e4943c957d1656bb05d3011914259f9eac2e3aa21526",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "resub",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 54,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "max",
+      "seed": 9,
+      "source": "new",
+      "result_sha256": "f9079fbe21feb49049bbb55bc132a770116adceb60a7eeeec3f500b0c0fbba8a",
+      "best_mapped_sha256": "ea9db84ac4f06121137c778b3ad9422e31f127da2e78f5ef8e4e85bc3a999ca6",
+      "equivalence_log_sha256": "2e77f9b7a16336b24623cf9d30318808aef2411fc46c90e0e5155565d189843b",
+      "final_network_sha256": "c1871605b3b42bb6b7131e5b0cd3b24656abedd52c5d9835581f3edd14f06edd",
+      "best": {
+        "luts": 782,
+        "levels": 42,
+        "feasible": false,
+        "sequence": [
+          "strash",
+          "balance",
+          "resub",
+          "refactor -z"
+        ],
+        "episode": 9,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 0,
+      "source": "new",
+      "result_sha256": "9b86faacb023da1e8b25e570fa26c37dfeedbfb3a19b14cc7fab19fd1d14d70b",
+      "best_mapped_sha256": "3a97e6f9018df1552e6228aca211cd30dda737862f582ca2cc68346b0537fae6",
+      "equivalence_log_sha256": "83937120a97e8f1dbbec300232721e20b438d4adf85def266ab46f6680778577",
+      "final_network_sha256": "7447da063fe0519e5a66bc2588c7464b1a4c0addbb8432bf93c86ab54ec15ae7",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 53,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 1,
+      "source": "new",
+      "result_sha256": "ddd04549a3b8120233f41f15924a8f628d8da12f04c7ba1f59e7fa446590b6e6",
+      "best_mapped_sha256": "3a97e6f9018df1552e6228aca211cd30dda737862f582ca2cc68346b0537fae6",
+      "equivalence_log_sha256": "eabf059f6b90694610a17813529c05b3a345b7a83106e53f05ec7773e3ed41d0",
+      "final_network_sha256": "09f125cf68de5b9d2b6fa689281bd8b93d2bed21c8feaf20529fe430e4524274",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 75,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 2,
+      "source": "new",
+      "result_sha256": "73d4dc932f0405492689391ef0c9f9389aa42070b1982858a94cf7fc32029ce7",
+      "best_mapped_sha256": "be1326a143ddd8b017cb5fc3944abc8599132c50444847ced6ded7bcd7b3e8a4",
+      "equivalence_log_sha256": "3dede7b6ac0235cb46b87b5b88f66741e4efd92525b55b97a8e182da7e2de2ee",
+      "final_network_sha256": "f3199dac13a8fde8fb3687bb47f2be32865365de1c988f565de8e081ad91e12b",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 94,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "bab9f3ce7927219e0a3a52cbf970df2814766f1024bde62660e778fe21085926",
+      "best_mapped_sha256": "eac1d1f66279304023579cff6be730727fe0d61544cb64d630e75eb6cc0db6a2",
+      "equivalence_log_sha256": "3c34a420ff9c43c49452f56abec934966e9ba6b4f63c6f69fb67d9812cf01b62",
+      "final_network_sha256": "6340a9c30dc9a4bcd90db5a2976277a84ef0a57207416c5cdc3e3000f926906a",
+      "best": {
+        "luts": 767,
+        "levels": 42,
+        "feasible": false,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "refactor -z"
+        ],
+        "episode": 44,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "dddaf5245ef47f993b9a666eec738fad36b446a6846296afed50df9b88540340",
+      "best_mapped_sha256": "f140325ff1683abed5ba3718a46cddd158e9a39ad31cb635254e1e7a0fac4d16",
+      "equivalence_log_sha256": "a8607a953e0468f5bf88d0af981091deb024d848e5f5b62eaf82f8d6a761db1e",
+      "final_network_sha256": "5dfbd9bb09855b4d80e8db7666e15111c53b00bcc0ab490f32e123c08c1cc45a",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 44,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 5,
+      "source": "new",
+      "result_sha256": "f3f1876bcc8eed48a1cc5b6f5a06cfd15322a72ae30eed068dab84e45a1b7d17",
+      "best_mapped_sha256": "6ee46af2defb01ca41d008af1164e1a48f496bc6c9813a86283f7b1a7d555ae4",
+      "equivalence_log_sha256": "af9226b087d86fc5ee2aecdc861262b0a866d6b1a45caa44fff92c9c34ac9fb3",
+      "final_network_sha256": "6acdf559ad4132f1e94d1c7ece7393bbb131fcb7b0ab724f285a896ab32f4320",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 111,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 6,
+      "source": "new",
+      "result_sha256": "dc9a3da80b0a2d12389e1b57dbfabad5bc08b667ff5b41971076dc74d3b5677d",
+      "best_mapped_sha256": "5b00ba83fb3258092d4ffd4bc16914208bae522f714eaf1ff0e3cd97c1a67af7",
+      "equivalence_log_sha256": "90882bd06931c270bebfaa8863f627c1aba57a2223930b77cb62938eab858068",
+      "final_network_sha256": "8d2a49e8ae0665487c4a1039a5afdaabae4ad78702ee677c811a5ffed740d6bd",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 47,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 7,
+      "source": "new",
+      "result_sha256": "6bdde9b4ba1858f9e852864316dca6ed6aa6429cac467117b88f3953d8894b5a",
+      "best_mapped_sha256": "f782d1ddf25545d458f0aa335f92914e85d16af26c49fb9fd51a5f2ba24ff5ef",
+      "equivalence_log_sha256": "2c4dce0cfa9ff96b42ed707202d8e9a4fd5b1da59597f9eb59ee6de6fc4d2ab1",
+      "final_network_sha256": "cdf38e209b8e244e7aa370f83b803b01d9d850e78c1ca9dac4370b97ed07ea0f",
+      "best": {
+        "luts": 790,
+        "levels": 40,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "refactor -z",
+          "balance"
+        ],
+        "episode": 224,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 8,
+      "source": "new",
+      "result_sha256": "8036cc95479d64a77889046bf7b4f0726f516028a3d0f9b4c32b9726b94b7337",
+      "best_mapped_sha256": "f50c07810beda27ae46a28f55dd75bb8f205c1db8720bb59441a5569df1292ce",
+      "equivalence_log_sha256": "62145295bb9108ca764589f935f1206b65aae3ed96cee711c7d16dc8df1f2beb",
+      "final_network_sha256": "3e81b9e6e8a1add5762be22b6d0d4cd922793c2b528386f74b0722553424339e",
+      "best": {
+        "luts": 781,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 90,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 9,
+      "source": "new",
+      "result_sha256": "9a58d764e5d5f9b486b603243aeeedb52776983340bc2ef06ead326c212800ed",
+      "best_mapped_sha256": "d0cf3c03ca934cd80ef9af543a27d473ca6c6fb548293a68ea3de1c790df24d2",
+      "equivalence_log_sha256": "ef199896e229c24a4749739e15419405b9fc9939c93ed2296d1da506b93da72e",
+      "final_network_sha256": "8194eadb0aa1e825c5f560620d5b826ac91a5e87262381e746f35084e2e3569c",
+      "best": {
+        "luts": 766,
+        "levels": 42,
+        "feasible": false,
+        "sequence": [
+          "strash",
+          "balance",
+          "rewrite -z",
+          "balance",
+          "refactor -z"
+        ],
+        "episode": 138,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "int2float",
+      "seed": 0,
+      "source": "new",
+      "result_sha256": "464ccea0fff64b1879f44e7e9d101ff974e8d8d5dd32ba180911dadd0e1df07a",
+      "best_mapped_sha256": "48c0d0fac5c26a0ee82b3d4fe50840f165f812ca9be359f2a666e45eda394886",
+      "equivalence_log_sha256": "c364305f572ce59176aaa6a2c4335235b3188a3ff5ae15bcae478d606fdad864",
+      "final_network_sha256": "48eca6ed9b54ca2a56f1ef9c0b6b47dd3db7cd7ab5664dfb5ada403a363dd6ed",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "resub",
+          "rewrite -z",
+          "refactor -z"
+        ],
+        "episode": 79,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "int2float",
+      "seed": 1,
+      "source": "new",
+      "result_sha256": "1a306474690a5fb61235dc68af49f312953b99896eb46c30b2c0cd52f9e48576",
+      "best_mapped_sha256": "0220cc11ead31044bbac68032b1593bbfaa73e66c494ac41bdb472300ec7cf88",
+      "equivalence_log_sha256": "67eb9611e210f51fec33fe51e6775b60610f3abf7a232ca587f6d4e46daf3ad0",
+      "final_network_sha256": "6aa2ca37202dad350b8c24bca61e33a446fedc6efeac75bac25597fbb0251d25",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "refactor",
+          "balance"
+        ],
+        "episode": 33,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "int2float",
+      "seed": 2,
+      "source": "new",
+      "result_sha256": "26dfdd7f0fe790d6786f2fadb1dbf29fedfbd7adddf61733956907403c5b9055",
+      "best_mapped_sha256": "00fa98137c243634ad58b7465ff6174760523dda56373dc93e921190b97e3f5b",
+      "equivalence_log_sha256": "9daeda7b1429382ac3a29a39246cd2375dd4a80beff3fd436b0b1eed1056991e",
+      "final_network_sha256": "54cfcfbae4df61d50e65d8916bb0bd9cb8f0b6057016f719513ba0d9a7a27d28",
+      "best": {
+        "luts": 44,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "resub -z",
+          "refactor -z",
+          "rewrite -z"
+        ],
+        "episode": 12,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "int2float",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "26a749dfe9552a3732f2c953dd3602acc8caa41132157d4f28b7fc2ddc77aa99",
+      "best_mapped_sha256": "859eb6dbb5b8e7ab51b59b2e509f018b91d0041219256f5c9f4d04752cc24ee1",
+      "equivalence_log_sha256": "e06ea21606f3f1c32b53acdb7ffa5826d03789b2803bcd5a9f8afc8060cf6118",
+      "final_network_sha256": "8c616f84d9be20c73c2982d8b006eee17bb81bee93c7364b422b0b3af55197b3",
+      "best": {
+        "luts": 46,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub",
+          "balance",
+          "refactor -z",
+          "balance"
+        ],
+        "episode": 13,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "int2float",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "4af07992695f6a7f354e2e9220178be73566e199d971b550accd03e8e3213c94",
+      "best_mapped_sha256": "e3c8beeb30f37880aa55a1485b9f5c79d853d8cce82f413cde7ea1f1a36386c6",
+      "equivalence_log_sha256": "fbda23a753fe6d826729996188e8e2e573cf725d6ed34c5dc5dd2f1514117bad",
+      "final_network_sha256": "27be8641f1ddb9da5f3cfc6e5ca9612af7e91da0e6dc6b22413a96c12756c587",
+      "best": {
+        "luts": 46,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor",
+          "balance",
+          "resub -z"
+        ],
+        "episode": 1,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "int2float",
+      "seed": 5,
+      "source": "new",
+      "result_sha256": "22b7a661604de57cb42b10e544424454251c053a7c2414713ac74eeabc01fb49",
+      "best_mapped_sha256": "1ee23f46cf0b59105c878810771aa5ce7806a497028e4214581a3dc5c7297d61",
+      "equivalence_log_sha256": "f0aa02baa3949a7ab12f87865551275bba01e0d7d46bd7cebe60482aabfd7112",
+      "final_network_sha256": "f005ad9d1edf47098badf9f366d4cdedf77fa36103e47d6c224677fbe5de5407",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "refactor -z",
+          "balance"
+        ],
+        "episode": 62,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "int2float",
+      "seed": 6,
+      "source": "new",
+      "result_sha256": "ea61782456760f06987107c25720d6aa5381f0ce260d8fe69861e70c5d18889b",
+      "best_mapped_sha256": "36abd4a52b9602b6925e75efc1c9e6ce80b305c5a83c93314785f3af2209c64a",
+      "equivalence_log_sha256": "5a8fa231141db4467549ec1ed297ac3bdb2d320cd3c763c511e354a95493ed27",
+      "final_network_sha256": "2f5da2d36c588f11c2219e8e6080fff914e744b2b2d43ecc1d5bb0480dbfe55b",
+      "best": {
+        "luts": 46,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor",
+          "balance",
+          "resub"
+        ],
+        "episode": 44,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "int2float",
+      "seed": 7,
+      "source": "new",
+      "result_sha256": "d95cdd6b382a8ae94e59b26e1b90347183c520c38ecb517e6c9b2ffc9d5c5e8e",
+      "best_mapped_sha256": "22d7abf18759ce25b47350d627378f6401fcd7aee55ae63aff457d2836686081",
+      "equivalence_log_sha256": "615b2410be56f055a7ad71c8e787531ae35fb9ca8a0332242bb26099201edfa5",
+      "final_network_sha256": "d1a74704082fd17f9d0b5920ac8aa783b4883ee7622189248f7224af4099f784",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "resub -z",
+          "rewrite",
+          "balance"
+        ],
+        "episode": 26,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "int2float",
+      "seed": 8,
+      "source": "new",
+      "result_sha256": "72b571f320cb9c4a43e3055599417aa484109c2e1a01c2196ca3ed86648875e3",
+      "best_mapped_sha256": "7641e77ca55e123d0f62b6b9375cbc6ec406183c8849975b07a9a873bf36d44d",
+      "equivalence_log_sha256": "234ae3695317d6d521bea4b3fbcbf8826db8dc6e2ac86d37064e3c1e272ca128",
+      "final_network_sha256": "5f4d28a15385f770644842c8ef2eb2ee7124cbc55a6fd7403ad4181e5da35320",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite",
+          "resub",
+          "rewrite -z"
+        ],
+        "episode": 43,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "window",
+      "circuit": "int2float",
+      "seed": 9,
+      "source": "new",
+      "result_sha256": "c83ba1ce0f204f881da237c678968e97b1d08ca1c063d79117128baac6c5bc64",
+      "best_mapped_sha256": "54dff5157c85c5e3249668a4ec7b7c457730de0c041049d38248b76f5a4e1015",
+      "equivalence_log_sha256": "e8531fb09a09013f9d05d643d790e7643a1069c302af86aa1c1617838c7fe033",
+      "final_network_sha256": "662068f651e1a3634281c4ca5562e092cadd1a62a16aadab3398a34f8d230479",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "refactor -z",
+          "balance"
+        ],
+        "episode": 31,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "int2float",
+      "seed": 0,
+      "source": "new",
+      "result_sha256": "0f73f3b166c74f0f5ead45696526d797f38a2961a497361d8738e0a8e2f532a9",
+      "best_mapped_sha256": "1ce4844e6e4edfbcb132600f7160fd146486e484d3ad3e4c1e65edbe5c3b0f8c",
+      "equivalence_log_sha256": "4cba28773b04c6965fae7c482bb9ab3bb258aa77b2b6f672fb1d35403d8d6918",
+      "final_network_sha256": "5911d352a4d14dd034f339bbe9dee71a94117674e489a32f106d4f521cfd543c",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub",
+          "rewrite -z",
+          "refactor -z",
+          "balance"
+        ],
+        "episode": 92,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "int2float",
+      "seed": 1,
+      "source": "new",
+      "result_sha256": "5006c2b2ca4c416bab25e398d47d9ff1fca2c7344fe4ba5a2a31a617edd19011",
+      "best_mapped_sha256": "e1eccfb16ae7746efdd4b608dcb420482b1583789a487c4709d73858737799d2",
+      "equivalence_log_sha256": "1a15ae9c4ffcd410344a73823cb38293127964b1c2d47884bc832848c9f84c4c",
+      "final_network_sha256": "efa3ad1566ea39d2d52c9f2ebef43865258893a486464c1499c1cbe138112d8d",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "refactor -z",
+          "resub"
+        ],
+        "episode": 126,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "int2float",
+      "seed": 2,
+      "source": "new",
+      "result_sha256": "f7f261abf066e57cc649af749722485834c92cb43e294a53b31c6b8bde54cee6",
+      "best_mapped_sha256": "ae5f36381a453063685f2c04758799b2ee3efa13f73135eb3d5117d0b815c0a9",
+      "equivalence_log_sha256": "ba21bae3e0ac493385ab8fac4e53b7a2253c4608c3d9b1ae226346d18529ff75",
+      "final_network_sha256": "a78731dbebbd25f162891335bbb1b9c65d0bc4952c84ac0ed0e540800aa592de",
+      "best": {
+        "luts": 44,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "resub -z",
+          "refactor -z",
+          "rewrite -z"
+        ],
+        "episode": 12,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "int2float",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "c392cae7b5008b737f06f71fea581bea8c9484f56744dec5bce4dd2e61d40bfe",
+      "best_mapped_sha256": "4b96560aace48d348fe02f864f88f9b3d0a1f4c1e863e9960b91093f587dbd52",
+      "equivalence_log_sha256": "764940d3b253e1fc3e57dd0309024fd6209f4fef8ef774c24e9c8fe6a80397cb",
+      "final_network_sha256": "65203945db609fbb6582cb5e8b848a90624b7fb231361daa28f8a1f858057a56",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "refactor -z",
+          "resub"
+        ],
+        "episode": 44,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "int2float",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "4fec0c12b0022c1ad9ca16cf80e26a51febf2dec96384a9e26ae3a92d96d5bea",
+      "best_mapped_sha256": "9d5535ffa90b70095e007bde27a749d26794679a61b1495346f9e1d116423072",
+      "equivalence_log_sha256": "f5094d379918ed2f52a7166b8e95f81a38592772e14f6fa0e6850f4a68963676",
+      "final_network_sha256": "14600a786887894d0fd0248476770f0888bce15c18d818823d289865ea9fedf1",
+      "best": {
+        "luts": 46,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor",
+          "balance",
+          "resub -z"
+        ],
+        "episode": 1,
+        "iteration": 3
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "int2float",
+      "seed": 5,
+      "source": "new",
+      "result_sha256": "1fc234557ab3115ac29f3e63a77e7be1fc04dcd77be1db8d0c4d7338c4567763",
+      "best_mapped_sha256": "3bc6da906b3120d33936d2dfc607475b7f481ec6eb8ed886ca9c843980c5fd05",
+      "equivalence_log_sha256": "27a45a1c346b73e16c5fa1ef663eb4c5a122b630a9796efd8472dd05d5f1f065",
+      "final_network_sha256": "6424564680bc98214562976db9f7188da8caf02bf12ef5c190ec115a4d60f323",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "refactor -z",
+          "balance"
+        ],
+        "episode": 62,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "int2float",
+      "seed": 6,
+      "source": "new",
+      "result_sha256": "cd661e152f148ca0a9fa7707560a2d9b4b3b39ebca0e789e83a5ad15f753eb19",
+      "best_mapped_sha256": "95d68b593b7cf204e9125e2b7b5350c0f6fdbffcc51d854e260ddd889b3894eb",
+      "equivalence_log_sha256": "7a3fe806c3a182563242cca4a4313bc8e0a028f134b4c54424a3403657d0f909",
+      "final_network_sha256": "7c8f7627004ad18fd1e5708fcaec3001726837dc1fb693976384bcaf5dd77704",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "rewrite",
+          "balance",
+          "resub -z"
+        ],
+        "episode": 22,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "int2float",
+      "seed": 7,
+      "source": "new",
+      "result_sha256": "8c2d817cbf745255dc20f6c7042d9258b8b927e5c6a26c11f9198a6bdc829e40",
+      "best_mapped_sha256": "55ed92dc50f0032bb2aa0a9b123c926295a9c15ea897eebcd951499baafb8426",
+      "equivalence_log_sha256": "c8491a5b343daf5df82d9fc68c0ed8ca707b9351dde4e2c91cdd1b126f7d6cbb",
+      "final_network_sha256": "f23e32825b5d971f18e17c6cf30ed1c34247018c24576e278469a2e7daa8d878",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor -z",
+          "resub -z",
+          "rewrite",
+          "balance"
+        ],
+        "episode": 26,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "int2float",
+      "seed": 8,
+      "source": "new",
+      "result_sha256": "7be7716754054cdf249d89c4c8a1f6c4743221bb566d711b9d1c0b3168a8703c",
+      "best_mapped_sha256": "3da51a41a1c43c3d6a12b6c4a100f68ee7493acc2fd34d5bf13fefadaf6c0395",
+      "equivalence_log_sha256": "3233abe46049b02b3fb56fc50a1982c515019c2e8c19f39922686465bfdf1946",
+      "final_network_sha256": "d528895084b08f34094f23c9c6ea5d481295fce4e3333b88a2ff779c55edb7db",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "refactor -z",
+          "balance"
+        ],
+        "episode": 88,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "four",
+      "group": "reward",
+      "circuit": "int2float",
+      "seed": 9,
+      "source": "new",
+      "result_sha256": "c2103b72a925134c44ffe1c2e82029118255d49801cfff9602f0ee52968fa90c",
+      "best_mapped_sha256": "cebb7d80a0c19eb59a9e74d9e4813c4c66a52b04182159a4283b65bbccb4e934",
+      "equivalence_log_sha256": "13c322e6b7c47b3bb94069d53515fc44c025365a63dc0de7794e1260eed8de60",
+      "final_network_sha256": "95ff385a2dcbc4ff95425f8307f155e93a6cb33cc0c49ac5b2b4e05e80f0fd3e",
+      "best": {
+        "luts": 45,
+        "levels": 3,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor",
+          "resub",
+          "balance",
+          "rewrite"
+        ],
+        "episode": 63,
+        "iteration": 4
+      },
+      "episodes": 250,
+      "mapping_calls": 1250
+    },
+    {
+      "phase": "ten",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 0,
+      "source": "new",
+      "result_sha256": "2434bd56523dfe1cf22813423340fae2883f56bcd74781ded4f33d2c7c10172e",
+      "best_mapped_sha256": "75556327766e6fd0bff108c2c3d054f1114087ff6dc36af5d52dc5f4ee6bb9aa",
+      "equivalence_log_sha256": "af8b4cc051a8bc00a4b5d8418885a6b7dd1f47c8eaa6150fe249aa7e1d445808",
+      "final_network_sha256": "da4d0985b8de68399d0188b613251ea77ff2a6ade6f9e99101266db2c42bb274",
+      "best": {
+        "luts": 764,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "refactor -z",
+          "balance",
+          "balance",
+          "rewrite -z",
+          "balance",
+          "balance",
+          "balance",
+          "balance",
+          "refactor -z"
+        ],
+        "episode": 48,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 1,
+      "source": "new",
+      "result_sha256": "98b432ca7d7c1cd7ac9962b38a58bcf90ea33c4e9cc393a1eecbaf0d4d339838",
+      "best_mapped_sha256": "7cf1f0fac076efadb168267e71931e0da4767e861083b3cbff135ee2107cbfce",
+      "equivalence_log_sha256": "16698d83841ec7b48c9669d74bfa5302c19332fbe383a96c3d6625401db9eb3f",
+      "final_network_sha256": "da2fc8bdcefcc5f1d8999f2685c016f7b82338d76176604d07838164f83fc722",
+      "best": {
+        "luts": 772,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "balance",
+          "rewrite -z",
+          "refactor -z",
+          "balance",
+          "rewrite -z",
+          "refactor",
+          "balance",
+          "balance"
+        ],
+        "episode": 76,
+        "iteration": 8
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 2,
+      "source": "new",
+      "result_sha256": "9573f57da94e855280728e119e9d71f49c2649dc597fa3fd797fb61744d65e27",
+      "best_mapped_sha256": "48e3dfe8cf10fb327d4c99b3b53fb2c11ae59713a5a6529c8fb1011574525563",
+      "equivalence_log_sha256": "a6600b35adbce132202b6cd0c0bb5d8e2919d8ef317b4fda0d396b7ded66feea",
+      "final_network_sha256": "63108ecbd26bd9b504c36e19a72da2ecce3f93142aa0646ce4c651c7a1bf4162",
+      "best": {
+        "luts": 760,
+        "levels": 40,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "balance",
+          "rewrite -z",
+          "rewrite -z",
+          "balance",
+          "rewrite -z"
+        ],
+        "episode": 52,
+        "iteration": 9
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "e21a16259af54cf9875d919673a7b57179b51e82a1169f1533e24f2579ebc97e",
+      "best_mapped_sha256": "62d717530ea78534829304edfb157ec86f1b00963ffab91ff4f66dc22eb2fa5b",
+      "equivalence_log_sha256": "98e921415004514cc440400e08965646d71b563742aec64617c0439aebc17c64",
+      "final_network_sha256": "9e04ae0b2071a56cb48f3dab57ebcc69a233a52d0fc98a350d0a1d8bac0fa02d",
+      "best": {
+        "luts": 767,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "balance",
+          "refactor -z",
+          "refactor -z",
+          "rewrite",
+          "resub",
+          "resub",
+          "resub -z",
+          "balance"
+        ],
+        "episode": 32,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "reward",
+      "circuit": "max",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "da2c46752ce6b033fce14ee30dc91e723981564b9b13fbd9bdca14178cefe109",
+      "best_mapped_sha256": "d690bee663c957545f590f5efb19742bc728fd6f0e8f1936cfa2209a9ec9021a",
+      "equivalence_log_sha256": "27ab1ef931889b7b67c8ac122b9d869b4bd4ac68925d3feaea31e64747516dc4",
+      "final_network_sha256": "c3b018f0ec2f06ce30be9155265e85eb9d409d0b2d906f03f0a3b42742748348",
+      "best": {
+        "luts": 768,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "resub",
+          "balance",
+          "refactor -z",
+          "rewrite -z",
+          "balance",
+          "resub -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 28,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "frozen",
+      "circuit": "max",
+      "seed": 0,
+      "source": "historical-verified",
+      "result_sha256": "78911f6d2ee45872b4e2f387f11b45d27681421e76d82c28fdcf4b41ba944685",
+      "best_mapped_sha256": "c12b9b10782c0b5a1e9eadad1b0df04fc08267e47813c0f4b602ace503344110",
+      "equivalence_log_sha256": "7ef6b36ae463c54fd61dac005b206b02d8b382c6bab821b0143ee078793e73a7",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 763,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "refactor -z",
+          "balance",
+          "refactor",
+          "rewrite -z",
+          "balance",
+          "resub",
+          "rewrite",
+          "balance",
+          "refactor -z"
+        ],
+        "episode": 48,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "frozen",
+      "circuit": "max",
+      "seed": 1,
+      "source": "historical-verified",
+      "result_sha256": "bb11906eb3f8e0c5cb100b819774129183e8e8890ad7b9bb683c03c490967e26",
+      "best_mapped_sha256": "81bfee10d9b46b7bcd61e0b62aa79f1dcebacbf734bc3cc307143f2b7782e021",
+      "equivalence_log_sha256": "b11d2aae5fbb8ae4ffbb35ea1006ea5c0b2c68d66b035690de4f5c93a0593bdc",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 775,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "resub -z",
+          "rewrite -z",
+          "refactor -z",
+          "rewrite -z",
+          "balance",
+          "refactor -z",
+          "rewrite",
+          "refactor -z",
+          "refactor -z"
+        ],
+        "episode": 7,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "frozen",
+      "circuit": "max",
+      "seed": 2,
+      "source": "historical-verified",
+      "result_sha256": "4c13d62812de46bbc8cfa8538613d323fd866b42aaabe5455ed1e2b2d6007113",
+      "best_mapped_sha256": "f7c6cac84fa05fada9672ef4293a93e249da4ef231081c152e8c84a078eca5b7",
+      "equivalence_log_sha256": "0f76ed7b1d4dbfb537772187a6620efe7a07f6758728e373dcb0bc21dab44610",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 773,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite",
+          "rewrite -z",
+          "resub -z",
+          "refactor -z",
+          "rewrite",
+          "balance",
+          "rewrite -z",
+          "refactor -z",
+          "balance"
+        ],
+        "episode": 100,
+        "iteration": 9
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "frozen",
+      "circuit": "max",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "21a58afd6ebe1f93e4db543ffe2b6e9a3448a2792fe6ee68eac83a8778d5c1de",
+      "best_mapped_sha256": "023da796bec5644e89f8685cf8c97eb5f206514e2ceef2fb3e3051b5251cc22e",
+      "equivalence_log_sha256": "00a7d9ad78527d077dc5e0fbab1f5cae3f2ab62a301b12d95a82f07aa98261b4",
+      "final_network_sha256": "525bc19bbae8d7b02806a2cc78b603f218a03ed0ff07f575c6a339ae0123fd8d",
+      "best": {
+        "luts": 769,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "balance",
+          "refactor -z",
+          "refactor",
+          "rewrite",
+          "resub",
+          "resub",
+          "resub -z",
+          "balance"
+        ],
+        "episode": 32,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "frozen",
+      "circuit": "max",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "5699a02171883c7f240f77d603fbbc83e9a5d66fd129ddaf67bfa097ef50f365",
+      "best_mapped_sha256": "e2d8e2b6ecd9bcc66af3a8708301640a53311e751416aa22641fc68d19518f29",
+      "equivalence_log_sha256": "33fd9d60e056f8bd279f63a02be3daff2cd316fbfa95df16e1dc142971d082ed",
+      "final_network_sha256": "d69bd98048cfe146a0dd31b014e5449f468f0e7e79e260059ac8eaf6d7f89a98",
+      "best": {
+        "luts": 770,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "balance",
+          "resub",
+          "resub",
+          "refactor -z",
+          "resub",
+          "balance"
+        ],
+        "episode": 64,
+        "iteration": 8
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "uniform",
+      "circuit": "max",
+      "seed": 0,
+      "source": "historical-verified",
+      "result_sha256": "460feb52b164f2fc703256304ee39464289d0d6141c09d4c53536dc72b3100f2",
+      "best_mapped_sha256": "9030d8379f6e627dbc4d9d742dc5ced2c9e75409ad44a6eee3c92c4bb25f29fc",
+      "equivalence_log_sha256": "b8278bf3ac7e962182bb81c84741f7ba775414f258ad4444cee3e108bcb3f044",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 769,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "rewrite -z",
+          "balance",
+          "balance",
+          "resub -z",
+          "refactor",
+          "rewrite -z",
+          "rewrite -z",
+          "refactor -z"
+        ],
+        "episode": 28,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "uniform",
+      "circuit": "max",
+      "seed": 1,
+      "source": "historical-verified",
+      "result_sha256": "d6765493cc48d9ac7e3004c6c78f9ff867bbfa726bb393c7a2f7173a6280acef",
+      "best_mapped_sha256": "d06f933a2a165663c5879a7a51c9d813fee906ee564cffdc6c7d536cee29b468",
+      "equivalence_log_sha256": "d96333b39de15f842a1b9c56e0b6b589ad063fcda41657a42e2ba72641262641",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 778,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "refactor -z",
+          "rewrite -z",
+          "balance",
+          "rewrite",
+          "refactor -z",
+          "resub -z",
+          "resub -z",
+          "rewrite"
+        ],
+        "episode": 39,
+        "iteration": 9
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "uniform",
+      "circuit": "max",
+      "seed": 2,
+      "source": "historical-verified",
+      "result_sha256": "b132d6604a45fb004a948f1d9b37f1b8e086d367c5616befaedd473689e41d8b",
+      "best_mapped_sha256": "82ee3e9e9f41fb4eff9944f3dbd991ac78594de7fae72b19b5f43b69c92db64f",
+      "equivalence_log_sha256": "03d9bbe27577aaff7087681dc8d9b15ad9ef325c55780558129e3dacb60bc3a2",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 777,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "refactor",
+          "refactor",
+          "refactor",
+          "rewrite -z",
+          "balance",
+          "balance",
+          "refactor -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 3,
+        "iteration": 9
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "uniform",
+      "circuit": "max",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "32d5e967ce217f4736eb9e91b6f6fc930cdc879b3de0bfbfbd30db7b94c3d45c",
+      "best_mapped_sha256": "6ef19a751da3f81caf2b7c36eca93a4a6ce6adf1da3aa00c1b502e51a837d7b4",
+      "equivalence_log_sha256": "7c1238e0da0a8d7954156ef80f5a3f882001099c9fbf73005873472401683e75",
+      "final_network_sha256": "525bc19bbae8d7b02806a2cc78b603f218a03ed0ff07f575c6a339ae0123fd8d",
+      "best": {
+        "luts": 769,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "balance",
+          "refactor -z",
+          "refactor",
+          "rewrite",
+          "resub",
+          "resub",
+          "resub -z",
+          "balance"
+        ],
+        "episode": 32,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "uniform",
+      "circuit": "max",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "c3c24827ea3380325f13ff8c3cea0be7591c6ff359e6b8b228f5e5ec26c228f6",
+      "best_mapped_sha256": "7505e42b1de6b7e846bc677885dbbdb4f587fd318e950a07603ed4ce6a9d81b3",
+      "equivalence_log_sha256": "a9e0b648f0f23ce9ad6700bf48c52cdff0c98170f9c4d67ee85ba0be3a85f5ea",
+      "final_network_sha256": "d69bd98048cfe146a0dd31b014e5449f468f0e7e79e260059ac8eaf6d7f89a98",
+      "best": {
+        "luts": 770,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "balance",
+          "resub",
+          "resub",
+          "refactor -z",
+          "resub",
+          "balance"
+        ],
+        "episode": 64,
+        "iteration": 8
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "greedy",
+      "circuit": "max",
+      "seed": 0,
+      "source": "new",
+      "result_sha256": "e8af1e90a84dff06ef5ebf9abf19d597b13c75a6e3e018e4c49aabfa93dfae14",
+      "best_mapped_sha256": "70886680dcdfe4b333dcdf16d18be9949dea29fd2cb4c4ada3d2b2955b6099a8",
+      "equivalence_log_sha256": "3b1170f85d4e5140694bee14e19f379ce09f0929ef35fa9f12a000a4c4f0809f",
+      "final_network_sha256": "da4d0985b8de68399d0188b613251ea77ff2a6ade6f9e99101266db2c42bb274",
+      "best": {
+        "luts": 768,
+        "levels": 44,
+        "feasible": false,
+        "sequence": [
+          "strash",
+          "balance",
+          "balance"
+        ],
+        "episode": 1,
+        "iteration": 2
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "greedy",
+      "circuit": "max",
+      "seed": 1,
+      "source": "new",
+      "result_sha256": "22bef148940620bd77e14b45ff901d7feceb7b85ecba7c2cea2b4e6e8abe09bc",
+      "best_mapped_sha256": "c8ab21554078f396f55241d15544c4f0ee86113abb0be6cf6c9e36f176376cd8",
+      "equivalence_log_sha256": "19bf75b3981a8ddd4b5a63ae8dddbee053299dd56830602013775a988c5c6eb1",
+      "final_network_sha256": "da2fc8bdcefcc5f1d8999f2685c016f7b82338d76176604d07838164f83fc722",
+      "best": {
+        "luts": 767,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "balance",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "balance",
+          "rewrite -z"
+        ],
+        "episode": 1,
+        "iteration": 8
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "greedy",
+      "circuit": "max",
+      "seed": 2,
+      "source": "new",
+      "result_sha256": "8f75a4b1372dc4859be0ad9fb7dcf7f0ac74c432db960fb66966229bc539a88d",
+      "best_mapped_sha256": "1630892758acbdca2f71a5fe22584e5cafeaf877133f772e2d954214fef9e0cc",
+      "equivalence_log_sha256": "e4082994e3adfc08910d2290a2677d7ff9570278d8b41ac529ad3de3a724b176",
+      "final_network_sha256": "63108ecbd26bd9b504c36e19a72da2ecce3f93142aa0646ce4c651c7a1bf4162",
+      "best": {
+        "luts": 779,
+        "levels": 41,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 1,
+        "iteration": 6
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "greedy",
+      "circuit": "max",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "a344e4bf6e86c79078b8cb57eb7aab798d09bc1615d6d06f096beea9648354d3",
+      "best_mapped_sha256": "3e1ea52f1d09ca4e1f3ade12527ca116f8b585c26762737103eac6e5e2d61b87",
+      "equivalence_log_sha256": "c2b2b847045da52a3f602db5c616afaa024ba7e57b2913e99e6f164e5837a030",
+      "final_network_sha256": "9e04ae0b2071a56cb48f3dab57ebcc69a233a52d0fc98a350d0a1d8bac0fa02d",
+      "best": {
+        "luts": 768,
+        "levels": 44,
+        "feasible": false,
+        "sequence": [
+          "strash",
+          "balance",
+          "balance"
+        ],
+        "episode": 1,
+        "iteration": 2
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "greedy",
+      "circuit": "max",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "08e9db03a317aedf66f8b90bea5af88df27298539d3fcb54415035a3f56b32ed",
+      "best_mapped_sha256": "69547b8f9397efd496dfe2a3deaeb9b0562549e53c8347d8f94bf3652ffbfa11",
+      "equivalence_log_sha256": "3b908f08cbb844590bdb42ccb9c0013897191d5729ac3ad17d7f6f574e3498d6",
+      "final_network_sha256": "c3b018f0ec2f06ce30be9155265e85eb9d409d0b2d906f03f0a3b42742748348",
+      "best": {
+        "luts": 768,
+        "levels": 44,
+        "feasible": false,
+        "sequence": [
+          "strash",
+          "balance",
+          "balance"
+        ],
+        "episode": 1,
+        "iteration": 2
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 0,
+      "source": "new",
+      "result_sha256": "b7f3dc49f9338957884061f057e5c6953a6cbdcf3cddffa23ae04674d7ba6fe5",
+      "best_mapped_sha256": "70820c3be4be8af5df846057bd5955a0caa3059b8fe59d8ad67eec50b7e10a0c",
+      "equivalence_log_sha256": "93e9c53c2b8bf1deec5bc925149ee7c1320ef6c94ba6494f1f0a42548f2110c6",
+      "final_network_sha256": "01d7c6c5daf0d1fa30918f052ce08c91582a5c4d9049e22c99e4448da83de868",
+      "best": {
+        "luts": 298,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "rewrite -z"
+        ],
+        "episode": 70,
+        "iteration": 9
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 1,
+      "source": "new",
+      "result_sha256": "33c6c7e933b6d854cf1a0e768518edc19ec57e6d2ca5be6c81d4eb87154b9c26",
+      "best_mapped_sha256": "862069b03a82e8faa1389e40d93da27631444a9e1c64302134fa2dd0dd670812",
+      "equivalence_log_sha256": "39e68a2783bc79956b3fa6c544403d124a01795b7eb19445d0939763827eebee",
+      "final_network_sha256": "0eed4622b1b731365a87c76b3f7ac2b06b230da87084a7cbf8b2482059dc256c",
+      "best": {
+        "luts": 299,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "rewrite",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "resub -z",
+          "refactor -z"
+        ],
+        "episode": 56,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 2,
+      "source": "new",
+      "result_sha256": "59f4c5ab48eafc4951d8b177aba3f570728e8605948d4c65d40cccc00fa5529c",
+      "best_mapped_sha256": "dfdf0b37303146c62e59bb9bc189fbaaeee010f06c1b9a9cbdd0bb0c88fd336a",
+      "equivalence_log_sha256": "d10500a10cefb562153dee155c4f1604ff1d74c97d9788ac9c9f3b487f1ac90a",
+      "final_network_sha256": "071ab703bda20549c88a45cd9705861a965bbbcf52d203ae42627690f4239402",
+      "best": {
+        "luts": 297,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 92,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "a3dc97304ad1e72e805d4995c47b494b8c5253969b93a03eeb5eb393e691e5af",
+      "best_mapped_sha256": "633a0450e83accd4fe8448633fbf52bce08d965afabb21286a25347a0f8f8444",
+      "equivalence_log_sha256": "6964f9f3b04a880d7fe909c4261238a418b97b2e18e5d40f12df6a28a131202e",
+      "final_network_sha256": "fe5c515ecb66aef566f5025255adcda671fab5bde994fd061b714f370b6b3415",
+      "best": {
+        "luts": 297,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "resub",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 70,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "reward",
+      "circuit": "i2c",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "def47e6abca9e7ea4a36f3427d8cc8a839df01bf419c71e9b3c4ca556c127490",
+      "best_mapped_sha256": "ce26de4cf442419ad3bf0527d39639b910290ae68834e36260c4326dcbaf6ac1",
+      "equivalence_log_sha256": "e7b3fb3cca64ff11b41dffc8b22212bcc43eb1ee5b23e0ee149c85fac5c18b0e",
+      "final_network_sha256": "2587ac574c119facdce244746e743092896924549983adbfa5c2153fbeb8be5d",
+      "best": {
+        "luts": 295,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "resub -z",
+          "resub",
+          "rewrite -z",
+          "rewrite -z",
+          "resub -z",
+          "rewrite -z",
+          "balance"
+        ],
+        "episode": 74,
+        "iteration": 9
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "frozen",
+      "circuit": "i2c",
+      "seed": 0,
+      "source": "historical-verified",
+      "result_sha256": "a2f051ea28f7c8c476b8366ad04ca00bbd4bcb71d598b2bcce50f0b2c044a8a7",
+      "best_mapped_sha256": "130ab5d1e654e34818140a0fab2d53d57a7a7181b8512ef8c50f41a6c019422c",
+      "equivalence_log_sha256": "6c9f6f448ba9c18a50ca56c28cb2a5116e18e2d27c51aa55165b14d3d7731f7f",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 301,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "refactor -z",
+          "balance",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite",
+          "refactor",
+          "resub",
+          "resub -z",
+          "rewrite -z"
+        ],
+        "episode": 64,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "frozen",
+      "circuit": "i2c",
+      "seed": 1,
+      "source": "historical-verified",
+      "result_sha256": "32b5309d1142b50503940a697b4aef916a998d9f543b1293c9b5400cc1af0e39",
+      "best_mapped_sha256": "2c191d6a494a842c0aeb1ecdb6860ab6b77fdd7697a687b0f82b607009037ef6",
+      "equivalence_log_sha256": "cd22cf12d1c3b42e6c4b4826a705df6d455bf12fb941554133a028bd2353556b",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 307,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "balance",
+          "resub -z",
+          "refactor -z",
+          "resub -z",
+          "rewrite -z",
+          "resub"
+        ],
+        "episode": 70,
+        "iteration": 8
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "frozen",
+      "circuit": "i2c",
+      "seed": 2,
+      "source": "historical-verified",
+      "result_sha256": "66b50bd3ffa5184545a256a37541ed5fab56ddd2e074f45f951ce888b4353b54",
+      "best_mapped_sha256": "9ecfd694748534881342973fdbd0d21fac2ec2e820748c1031717c8a849ae12c",
+      "equivalence_log_sha256": "57a1b1ac13b51b643227382e81d67bd7c53a9e295353c901a7c8e8a2edaddc87",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 306,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "balance",
+          "resub -z",
+          "refactor -z",
+          "rewrite -z",
+          "rewrite",
+          "rewrite -z",
+          "resub",
+          "rewrite -z",
+          "resub -z"
+        ],
+        "episode": 81,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "frozen",
+      "circuit": "i2c",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "efca46c4eac97a6df2d70436602fe5d5531163aec8a04d3f71a425d41f4cedc6",
+      "best_mapped_sha256": "376656b981d875243057e8ba12563b3d83743f9e0f049fffa8df157c885c22d3",
+      "equivalence_log_sha256": "aaa2f4fe463cc2b9c4d3013b47c85e7f1b343d40a8fdee44d8028b6d1fe46fc1",
+      "final_network_sha256": "525bc19bbae8d7b02806a2cc78b603f218a03ed0ff07f575c6a339ae0123fd8d",
+      "best": {
+        "luts": 304,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "rewrite",
+          "rewrite -z",
+          "rewrite -z",
+          "resub -z",
+          "rewrite -z",
+          "rewrite -z",
+          "resub -z",
+          "refactor"
+        ],
+        "episode": 63,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "frozen",
+      "circuit": "i2c",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "a3083aa3e9bf4d59826f43d7cf4684e2491ae018e862bdb2103d88346fd1381c",
+      "best_mapped_sha256": "94909e8c5132dc3adbae2cf6e7dec9c496a654a7237258ab52225f2c2b140e48",
+      "equivalence_log_sha256": "2207154726d86d74dd45c1002b86ee719ebff8f3a8bc603cd372428c9a429983",
+      "final_network_sha256": "d69bd98048cfe146a0dd31b014e5449f468f0e7e79e260059ac8eaf6d7f89a98",
+      "best": {
+        "luts": 305,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "refactor",
+          "rewrite -z",
+          "rewrite -z",
+          "refactor",
+          "resub -z",
+          "balance",
+          "rewrite -z",
+          "resub -z",
+          "rewrite -z"
+        ],
+        "episode": 26,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "uniform",
+      "circuit": "i2c",
+      "seed": 0,
+      "source": "historical-verified",
+      "result_sha256": "720b32173be3e1867ddf5a5c4e2cf5b166ba6edd74438fc9c2f0b42951151b03",
+      "best_mapped_sha256": "5e58252ecf3e48d087f3c62a6640c94b873d12cf5d455f51bacaaa59431beba5",
+      "equivalence_log_sha256": "d599012a7c966dbcf6e7c00a882f82e8874d336d81dc64a72fe180137fd847b0",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 304,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "refactor",
+          "rewrite -z",
+          "resub -z",
+          "refactor -z",
+          "resub",
+          "refactor -z",
+          "resub -z"
+        ],
+        "episode": 41,
+        "iteration": 9
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "uniform",
+      "circuit": "i2c",
+      "seed": 1,
+      "source": "historical-verified",
+      "result_sha256": "3a11a155a1a62d228f4dcf7be6fba99606eec5cc4900ff6a5f3931e5bcfcdbf6",
+      "best_mapped_sha256": "4c8a4899d9c4f11b81f7227417ede83e76dcf57ad708c2be9120b57c65c6c35f",
+      "equivalence_log_sha256": "7796e20fa36afe1ea0b2a3f1032926d873ebf7b3108fab23cdccfcdfc66737d5",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 304,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "resub -z",
+          "balance",
+          "rewrite -z",
+          "rewrite",
+          "resub",
+          "resub -z",
+          "refactor -z",
+          "rewrite -z",
+          "resub -z"
+        ],
+        "episode": 61,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "uniform",
+      "circuit": "i2c",
+      "seed": 2,
+      "source": "historical-verified",
+      "result_sha256": "441e8d9fa1e0ad3b1a984768d63be133a01ce007c33bce2e9822756964d1cb6c",
+      "best_mapped_sha256": "664de58f373f1d4e361e89a012db7a584d727bac809c6426e5c143184fdb4474",
+      "equivalence_log_sha256": "be20dbbce6fb4de2836612071a9b895b0a5eadf93e305d70f80d58f0ed7b72e3",
+      "final_network_sha256": null,
+      "best": {
+        "luts": 305,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite",
+          "rewrite -z",
+          "resub -z",
+          "refactor -z",
+          "rewrite",
+          "resub",
+          "rewrite -z",
+          "rewrite -z",
+          "balance",
+          "resub -z"
+        ],
+        "episode": 100,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "uniform",
+      "circuit": "i2c",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "2a9eed82e87342f641278b95c35e0b8ae195749c0f5a5e9bec32c2082819f2e1",
+      "best_mapped_sha256": "63a57c11ec87124614ebb63aced07ab595fdc71950247f7240ba9006eb2cb942",
+      "equivalence_log_sha256": "f0ef95aeaafc982df1116156f59763d58dcb711d253c73de5cfb5681101300bd",
+      "final_network_sha256": "525bc19bbae8d7b02806a2cc78b603f218a03ed0ff07f575c6a339ae0123fd8d",
+      "best": {
+        "luts": 304,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "resub -z",
+          "rewrite -z",
+          "rewrite",
+          "rewrite -z",
+          "rewrite -z",
+          "resub -z",
+          "rewrite -z",
+          "rewrite -z",
+          "resub -z",
+          "refactor"
+        ],
+        "episode": 63,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "uniform",
+      "circuit": "i2c",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "a4a3b774672a31eca8b81a35a9acdee75a0c4bae2aae5e7c65726e8d09c51d20",
+      "best_mapped_sha256": "7edb30d8a7a02287f2d46282e1d031077ef805684a8c4416aac37ae97a600b6f",
+      "equivalence_log_sha256": "256cc27df094fba8487858278fce6f600610ff4a67879880e79e2f2fee202ad7",
+      "final_network_sha256": "d69bd98048cfe146a0dd31b014e5449f468f0e7e79e260059ac8eaf6d7f89a98",
+      "best": {
+        "luts": 306,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "resub",
+          "rewrite -z",
+          "resub",
+          "refactor",
+          "rewrite -z",
+          "resub",
+          "resub",
+          "rewrite -z"
+        ],
+        "episode": 80,
+        "iteration": 9
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "greedy",
+      "circuit": "i2c",
+      "seed": 0,
+      "source": "new",
+      "result_sha256": "fa2c50ab4c749d43b325a44556748c8600d3975fa620e2b9de5f8ad0fdda475e",
+      "best_mapped_sha256": "12347fc77fe686761612f7c2ca7057d79e8d4b292fe44c79b4b711d8350a4a6f",
+      "equivalence_log_sha256": "d4a76777acebe6ed74bfdca166b14092e97e5339c707c3dd5082786be091d0ef",
+      "final_network_sha256": "01d7c6c5daf0d1fa30918f052ce08c91582a5c4d9049e22c99e4448da83de868",
+      "best": {
+        "luts": 314,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 1,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "greedy",
+      "circuit": "i2c",
+      "seed": 1,
+      "source": "new",
+      "result_sha256": "e162aa0bd612f418d4e7cf68463444723fcccef80c1f41c44fd7d0faf4bfb09c",
+      "best_mapped_sha256": "12347fc77fe686761612f7c2ca7057d79e8d4b292fe44c79b4b711d8350a4a6f",
+      "equivalence_log_sha256": "3ea7bce36a4c9e51126d1acb21d128f6b42245ba87fe905858e068c74f23a2d3",
+      "final_network_sha256": "0eed4622b1b731365a87c76b3f7ac2b06b230da87084a7cbf8b2482059dc256c",
+      "best": {
+        "luts": 314,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 1,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "greedy",
+      "circuit": "i2c",
+      "seed": 2,
+      "source": "new",
+      "result_sha256": "0f21a1444f1b6c3029cc1fdab78bad0f99b257a451d2b6e31a18346ecdc7358d",
+      "best_mapped_sha256": "12347fc77fe686761612f7c2ca7057d79e8d4b292fe44c79b4b711d8350a4a6f",
+      "equivalence_log_sha256": "29760b0ebaa3f11d303cc67f7360989466cc4739cb6989391b3097d81322846f",
+      "final_network_sha256": "071ab703bda20549c88a45cd9705861a965bbbcf52d203ae42627690f4239402",
+      "best": {
+        "luts": 314,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 1,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "greedy",
+      "circuit": "i2c",
+      "seed": 3,
+      "source": "new",
+      "result_sha256": "62d8e70e533f784fa4ddb4ad4ab83d0ae1ce25ab7897603d9baea4166886e378",
+      "best_mapped_sha256": "91570b5d4677c7ff3009672bc678ea1530787c6a194e8b7d0e3e561410f1496c",
+      "equivalence_log_sha256": "35682b8a7ef9a8d00fce607410e5997297362ab1065d91ee8206debc95399ea7",
+      "final_network_sha256": "fe5c515ecb66aef566f5025255adcda671fab5bde994fd061b714f370b6b3415",
+      "best": {
+        "luts": 314,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 1,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    },
+    {
+      "phase": "ten",
+      "group": "greedy",
+      "circuit": "i2c",
+      "seed": 4,
+      "source": "new",
+      "result_sha256": "d2195e7e3682aeddf9d7790653dddd4206d484095860982cede7d156f23ed438",
+      "best_mapped_sha256": "91570b5d4677c7ff3009672bc678ea1530787c6a194e8b7d0e3e561410f1496c",
+      "equivalence_log_sha256": "3848ac24d0d5e759de983a3c77cf7ceaacae14364b6b83653111d6217d6cb9e0",
+      "final_network_sha256": "2587ac574c119facdce244746e743092896924549983adbfa5c2153fbeb8be5d",
+      "best": {
+        "luts": 314,
+        "levels": 4,
+        "feasible": true,
+        "sequence": [
+          "strash",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z",
+          "rewrite -z"
+        ],
+        "episode": 1,
+        "iteration": 10
+      },
+      "episodes": 100,
+      "mapping_calls": 1100
+    }
+  ]
+}

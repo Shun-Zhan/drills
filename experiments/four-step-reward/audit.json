@@ -1,0 +1,893 @@
+{
+  "status": "pass",
+  "fingerprint": "dd3f70044c3521db5d7788f3949524aa0d1c916a94a5fecbeecab62de53f3d49",
+  "candidate_sha256": "d4aee890f50bd02e802d2e501fce8646459e51bb28a32baa36dfa01cd1b83f14",
+  "rows": [
+    {
+      "circuit": "int2float",
+      "reward": "original",
+      "gamma": "99/100",
+      "total_sequences": 2401,
+      "top_score": 8.821197,
+      "runner_up_score": 7.821197,
+      "distinct_score_gap": 1.0,
+      "tied_top": 12,
+      "optimal_top": 2,
+      "all_top_optimal": false,
+      "top_actions": [
+        [
+          2,
+          0,
+          0,
+          6
+        ],
+        [
+          2,
+          0,
+          4,
+          6
+        ],
+        [
+          2,
+          0,
+          5,
+          6
+        ],
+        [
+          2,
+          0,
+          6,
+          0
+        ],
+        [
+          2,
+          0,
+          6,
+          4
+        ],
+        [
+          2,
+          0,
+          6,
+          5
+        ],
+        [
+          3,
+          4,
+          0,
+          6
+        ],
+        [
+          3,
+          4,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          3,
+          6
+        ],
+        [
+          3,
+          5,
+          0,
+          6
+        ],
+        [
+          3,
+          5,
+          3,
+          1
+        ],
+        [
+          3,
+          5,
+          3,
+          6
+        ]
+      ],
+      "top_best_luts": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "circuit": "i2c",
+      "reward": "original",
+      "gamma": "99/100",
+      "total_sequences": 2401,
+      "top_score": 11.821197,
+      "runner_up_score": 8.9103,
+      "distinct_score_gap": 2.910897,
+      "tied_top": 500,
+      "optimal_top": 4,
+      "all_top_optimal": false,
+      "top_actions": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          5,
+          1
+        ],
+        [
+          0,
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          1
+        ],
+        [
+          0,
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          0,
+          6,
+          4
+        ],
+        [
+          0,
+          0,
+          6,
+          5
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "top_best_luts": [
+        312,
+        313,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        346,
+        347,
+        348,
+        349
+      ]
+    },
+    {
+      "circuit": "max",
+      "reward": "original",
+      "gamma": "99/100",
+      "total_sequences": 2401,
+      "top_score": 9.851097,
+      "runner_up_score": 7.9203,
+      "distinct_score_gap": 1.930797,
+      "tied_top": 1,
+      "optimal_top": 0,
+      "all_top_optimal": false,
+      "top_actions": [
+        [
+          3,
+          0,
+          3,
+          6
+        ]
+      ],
+      "top_best_luts": []
+    },
+    {
+      "circuit": "int2float",
+      "reward": "candidate",
+      "gamma": "99/100",
+      "total_sequences": 2401,
+      "top_score": 9.96121836734694,
+      "runner_up_score": 8.001018367346939,
+      "distinct_score_gap": 1.9602,
+      "tied_top": 2,
+      "optimal_top": 2,
+      "all_top_optimal": true,
+      "top_actions": [
+        [
+          3,
+          4,
+          3,
+          1
+        ],
+        [
+          3,
+          5,
+          3,
+          1
+        ]
+      ],
+      "top_best_luts": [
+        44
+      ]
+    },
+    {
+      "circuit": "i2c",
+      "reward": "candidate",
+      "gamma": "99/100",
+      "total_sequences": 2401,
+      "top_score": 14.416930136986302,
+      "runner_up_score": 14.351914794520548,
+      "distinct_score_gap": 0.06501534246575343,
+      "tied_top": 2,
+      "optimal_top": 2,
+      "all_top_optimal": true,
+      "top_actions": [
+        [
+          4,
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          1,
+          0
+        ]
+      ],
+      "top_best_luts": [
+        312
+      ]
+    },
+    {
+      "circuit": "max",
+      "reward": "candidate",
+      "gamma": "99/100",
+      "total_sequences": 2401,
+      "top_score": 105.24315360253365,
+      "runner_up_score": 104.25738873317498,
+      "distinct_score_gap": 0.9857648693586698,
+      "tied_top": 7,
+      "optimal_top": 7,
+      "all_top_optimal": true,
+      "top_actions": [
+        [
+          3,
+          1,
+          6,
+          0
+        ],
+        [
+          3,
+          1,
+          6,
+          1
+        ],
+        [
+          3,
+          1,
+          6,
+          2
+        ],
+        [
+          3,
+          1,
+          6,
+          3
+        ],
+        [
+          3,
+          1,
+          6,
+          4
+        ],
+        [
+          3,
+          1,
+          6,
+          5
+        ],
+        [
+          3,
+          1,
+          6,
+          6
+        ]
+      ],
+      "top_best_luts": [
+        781
+      ]
+    },
+    {
+      "circuit": "int2float",
+      "reward": "original",
+      "gamma": "1",
+      "total_sequences": 2401,
+      "top_score": 9.0,
+      "runner_up_score": 8.0,
+      "distinct_score_gap": 1.0,
+      "tied_top": 12,
+      "optimal_top": 2,
+      "all_top_optimal": false,
+      "top_actions": [
+        [
+          2,
+          0,
+          0,
+          6
+        ],
+        [
+          2,
+          0,
+          4,
+          6
+        ],
+        [
+          2,
+          0,
+          5,
+          6
+        ],
+        [
+          2,
+          0,
+          6,
+          0
+        ],
+        [
+          2,
+          0,
+          6,
+          4
+        ],
+        [
+          2,
+          0,
+          6,
+          5
+        ],
+        [
+          3,
+          4,
+          0,
+          6
+        ],
+        [
+          3,
+          4,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          3,
+          6
+        ],
+        [
+          3,
+          5,
+          0,
+          6
+        ],
+        [
+          3,
+          5,
+          3,
+          1
+        ],
+        [
+          3,
+          5,
+          3,
+          6
+        ]
+      ],
+      "top_best_luts": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "circuit": "i2c",
+      "reward": "original",
+      "gamma": "1",
+      "total_sequences": 2401,
+      "top_score": 12.0,
+      "runner_up_score": 9.0,
+      "distinct_score_gap": 3.0,
+      "tied_top": 500,
+      "optimal_top": 4,
+      "all_top_optimal": false,
+      "top_actions": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          5,
+          1
+        ],
+        [
+          0,
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          1
+        ],
+        [
+          0,
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          0,
+          6,
+          4
+        ],
+        [
+          0,
+          0,
+          6,
+          5
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "top_best_luts": [
+        312,
+        313,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        346,
+        347,
+        348,
+        349
+      ]
+    },
+    {
+      "circuit": "max",
+      "reward": "original",
+      "gamma": "1",
+      "total_sequences": 2401,
+      "top_score": 10.0,
+      "runner_up_score": 8.0,
+      "distinct_score_gap": 2.0,
+      "tied_top": 1,
+      "optimal_top": 0,
+      "all_top_optimal": false,
+      "top_actions": [
+        [
+          3,
+          0,
+          3,
+          6
+        ]
+      ],
+      "top_best_luts": []
+    },
+    {
+      "circuit": "int2float",
+      "reward": "candidate",
+      "gamma": "1",
+      "total_sequences": 2401,
+      "top_score": 10.204081632653061,
+      "runner_up_score": 8.16326530612245,
+      "distinct_score_gap": 2.0408163265306123,
+      "tied_top": 2,
+      "optimal_top": 2,
+      "all_top_optimal": true,
+      "top_actions": [
+        [
+          3,
+          4,
+          3,
+          1
+        ],
+        [
+          3,
+          5,
+          3,
+          1
+        ]
+      ],
+      "top_best_luts": [
+        44
+      ]
+    },
+    {
+      "circuit": "i2c",
+      "reward": "candidate",
+      "gamma": "1",
+      "total_sequences": 2401,
+      "top_score": 14.520547945205479,
+      "runner_up_score": 14.246575342465754,
+      "distinct_score_gap": 0.273972602739726,
+      "tied_top": 4,
+      "optimal_top": 4,
+      "all_top_optimal": true,
+      "top_actions": [
+        [
+          1,
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          1,
+          5,
+          1
+        ],
+        [
+          4,
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          1,
+          0
+        ]
+      ],
+      "top_best_luts": [
+        312
+      ]
+    },
+    {
+      "circuit": "max",
+      "reward": "candidate",
+      "gamma": "1",
+      "total_sequences": 2401,
+      "top_score": 107.24465558194774,
+      "runner_up_score": 107.12589073634204,
+      "distinct_score_gap": 0.1187648456057007,
+      "tied_top": 19,
+      "optimal_top": 19,
+      "all_top_optimal": true,
+      "top_actions": [
+        [
+          0,
+          3,
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          1,
+          6
+        ],
+        [
+          3,
+          0,
+          1,
+          6
+        ],
+        [
+          3,
+          1,
+          0,
+          6
+        ],
+        [
+          3,
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          1,
+          4,
+          6
+        ],
+        [
+          3,
+          1,
+          5,
+          6
+        ],
+        [
+          3,
+          1,
+          6,
+          0
+        ],
+        [
+          3,
+          1,
+          6,
+          1
+        ],
+        [
+          3,
+          1,
+          6,
+          2
+        ],
+        [
+          3,
+          1,
+          6,
+          3
+        ],
+        [
+          3,
+          1,
+          6,
+          4
+        ],
+        [
+          3,
+          1,
+          6,
+          5
+        ],
+        [
+          3,
+          1,
+          6,
+          6
+        ],
+        [
+          3,
+          2,
+          1,
+          6
+        ],
+        [
+          3,
+          4,
+          1,
+          6
+        ],
+        [
+          3,
+          5,
+          1,
+          6
+        ],
+        [
+          4,
+          3,
+          1,
+          6
+        ],
+        [
+          5,
+          3,
+          1,
+          6
+        ]
+      ],
+      "top_best_luts": [
+        781
+      ]
+    }
+  ]
+}

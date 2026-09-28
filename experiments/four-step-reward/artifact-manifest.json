@@ -1,0 +1,131 @@
+{
+  "fingerprint": "dd3f70044c3521db5d7788f3949524aa0d1c916a94a5fecbeecab62de53f3d49",
+  "artifacts": {
+    "README.md": "8f39f9b4dd0cc9c49082ade4cccedd792586d497dac67bb44ecb33a488e36e53",
+    "analyze.py": "652b82a90a62a6c49d304d6f5bc3f6a4e4b7fe49f5bcbdd93709dd56d62694c2",
+    "audit.json": "c140fb8c1d3fd201100d4d7a2734e825d0db53635010d99d3684e1dbddde8d55",
+    "audit.py": "ff439d7dac36ac562e6b483cd9696775e8444380f26dd992c8e9877a59b2a73e",
+    "context.py": "1210fb838bd2117c82f60635711ca187fbbb50bc8844b9df6a1e57f10aa7d0a1",
+    "evidence.json": "a4edf894d3b893165d90bfe1aa68eab5b647d97219edbb0fd697689add52c1d7",
+    "exact_eval.py": "75e6608a35d6de32e76faf4e414ae72bddf041dd69f48704bdcca3d6498ae8fb",
+    "finalize-report.sh": "d3ae25d8f899e16b7d3b0d1ef53afe5a604f8ff77cafa62459ae598c8b4f2359",
+    "paired.csv": "f055e04a6d0a1b8f9563e1994ca0fc6f57442072017c7fb2d18c4012fcfa3793",
+    "protocol.yml": "d4c1003d9501f10bc33a44450978da92de77dc10089c6ae0cf67e5e0fde090ed",
+    "report.md": "4b841756f4f446e9ae0901a550fb1f268f43049716f735fd5b9768e66b038581",
+    "reward.py": "3d8690c1c3af43dffddebf8161a3b7f6e2c58aea4b7d8654f8c86d9fd53def5e",
+    "run.py": "592241f70510f9ae21de96423f6a4fb205cd793a5202fb6480cc11c49e07370a",
+    "snapshots.csv": "39ab8f11aadd8fa3bdd5671849d0074d4cab7e5d6c7d483705c92e6063c3f778",
+    "snapshots.svg": "22fcb02d532c7abb879ba2084dca4a5c00af12dcc8a351acede45461ef0920de",
+    "summary.json": "7452557c114b5a6aa193173b1d06404220035f50fd2459fb72a77720529341b2",
+    "table.py": "e9551e5636b7ceaaeee1cf1d83d8a651217020e9eb4399ae0e95a86964009b39",
+    "ten-curves.csv": "be899569c57c25774d2b9916cad44ac8f9a7b2d8c631742d3a970760f62562f8",
+    "ten-curves.svg": "c5dec8592f4a2c776d98120c6574aa90eb825605efba2bb1f4ee6ef210635695",
+    "ten-results.csv": "4bd0c60f82c13293c885bf833d4fbaf35b1b52edcd253c948d918e41cc5148cf",
+    "ten.py": "94268474a4db4e02bd49c7f09632222709decf65c81d712f6e4e90865db8498c",
+    "test_suite.py": "75c86fb94cfa331bab83f7e538cea8d4f5c84a087fc83a8ebd06e4fdd13b3a18",
+    "training-best.csv": "d4a7c88ba54547b8d2011cd33835b1a04c020de2adbe11cddefab6ebf38f1cd9"
+  },
+  "source_payload": {
+    "old_fingerprint": "073718d35a3963353ddbf3115617c8d3518380a6447e854dbc74c0996588e72c",
+    "followup_fingerprint": "db9c06bcd3d6a434fe1bb1df9a47ff6e53c5758858da358e86cca4f21585e0b0",
+    "candidate_sha256": "d4aee890f50bd02e802d2e501fce8646459e51bb28a32baa36dfa01cd1b83f14",
+    "prefix_sha256": {
+      "i2c": "fbb411f40e1823a442cbe123aed7f41f00823f9d88579163d2565c17f338d2a4",
+      "max": "9eb3152531cb2bb1e2325051ba41bb2a256f91939bc5326f1f5781d8c8f2557c",
+      "int2float": "1beb296607544579bcb95fc99c524d700f78af6e141e5fedf2f4821d2e38f216"
+    },
+    "sources": {
+      "experiments/four-step-reward/analyze.py": "652b82a90a62a6c49d304d6f5bc3f6a4e4b7fe49f5bcbdd93709dd56d62694c2",
+      "experiments/four-step-reward/audit.py": "ff439d7dac36ac562e6b483cd9696775e8444380f26dd992c8e9877a59b2a73e",
+      "experiments/four-step-reward/context.py": "1210fb838bd2117c82f60635711ca187fbbb50bc8844b9df6a1e57f10aa7d0a1",
+      "experiments/four-step-reward/exact_eval.py": "75e6608a35d6de32e76faf4e414ae72bddf041dd69f48704bdcca3d6498ae8fb",
+      "experiments/four-step-reward/reward.py": "3d8690c1c3af43dffddebf8161a3b7f6e2c58aea4b7d8654f8c86d9fd53def5e",
+      "experiments/four-step-reward/run.py": "592241f70510f9ae21de96423f6a4fb205cd793a5202fb6480cc11c49e07370a",
+      "experiments/four-step-reward/table.py": "e9551e5636b7ceaaeee1cf1d83d8a651217020e9eb4399ae0e95a86964009b39",
+      "experiments/four-step-reward/ten.py": "94268474a4db4e02bd49c7f09632222709decf65c81d712f6e4e90865db8498c",
+      "experiments/four-step-reward/test_suite.py": "75c86fb94cfa331bab83f7e538cea8d4f5c84a087fc83a8ebd06e4fdd13b3a18",
+      "experiments/four-step-reward/protocol.yml": "d4c1003d9501f10bc33a44450978da92de77dc10089c6ae0cf67e5e0fde090ed"
+    },
+    "tools": {
+      "abc_binary": "8bfa8e2ed1ea3c952cf9445e9467f16882b204f4c609e493bf96a83943817366",
+      "yosys_binary": "da0a89f2c35c7a5d4d582ab6c547a9cab00d38f4afeb2b4572994e9bd3ae36a4"
+    },
+    "circuits": {
+      "int2float": "ad280bdb8331591998b8184ff70ad00d31184649c245796965fc6777e3016bab",
+      "i2c": "3f6ab413a3f745c87811fa6565d972146f1f4e6ede78fae71fcb16e469b9b213",
+      "max": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9"
+    },
+    "protocol": {
+      "four_step_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "four_step_episodes": 250,
+      "four_step_iterations": 4,
+      "circuits": [
+        "i2c",
+        "max",
+        "int2float"
+      ],
+      "snapshots": [
+        0,
+        50,
+        100,
+        150,
+        200,
+        250
+      ],
+      "learning_rate": 0.01,
+      "gamma": 0.99,
+      "return_window": 8,
+      "warmup_episodes": 8,
+      "return_std_floor": 1.0,
+      "reward": {
+        "first_feasible": 100,
+        "lut_percent": 100,
+        "infeasible_depth": 10
+      },
+      "pilot": {
+        "seed": 10,
+        "episodes": 20,
+        "i2c_reference_mean_abs_advantage": 0.434,
+        "same_order_lower": 0.0434,
+        "same_order_upper": 4.34
+      },
+      "four_step_gate": {
+        "improved_seeds": 6,
+        "bootstrap_seed": 20260928,
+        "bootstrap_draws": 10000
+      },
+      "ten_step": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "episodes": 100,
+        "iterations": 10,
+        "circuits_in_priority_order": [
+          "max",
+          "i2c"
+        ],
+        "required_seed_wins": 5
+      },
+      "workers": 3,
+      "task_timeout_seconds": 1800
+    },
+    "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 18:02:02) \n[Clang 18.1.8 ]",
+    "torch": "2.8.0",
+    "numpy": "1.26.4"
+  }
+}

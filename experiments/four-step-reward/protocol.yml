@@ -1,0 +1,35 @@
+# Fixed before examining any new training seed. The source plan is
+# https://github.com/EpsilonLh/drills/blob/main/docs/four-step-window-return-review.md
+reward_experiment:
+  four_step_seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  four_step_episodes: 250
+  four_step_iterations: 4
+  circuits: [i2c, max, int2float]
+  snapshots: [0, 50, 100, 150, 200, 250]
+  learning_rate: 0.01
+  gamma: 0.99
+  return_window: 8
+  warmup_episodes: 8
+  return_std_floor: 1.0
+  reward:
+    first_feasible: 100
+    lut_percent: 100
+    infeasible_depth: 10
+  pilot:
+    seed: 10
+    episodes: 20
+    i2c_reference_mean_abs_advantage: 0.434
+    same_order_lower: 0.0434
+    same_order_upper: 4.34
+  four_step_gate:
+    improved_seeds: 6
+    bootstrap_seed: 20260928
+    bootstrap_draws: 10000
+  ten_step:
+    seeds: [0, 1, 2, 3, 4]
+    episodes: 100
+    iterations: 10
+    circuits_in_priority_order: [max, i2c]
+    required_seed_wins: 5
+  workers: 3
+  task_timeout_seconds: 1800

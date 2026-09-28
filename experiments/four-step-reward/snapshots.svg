@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1170">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#172033;font-size:14px}</style>
+<text x="95" y="27" font-size="18">i2c: expected_gap</text>
+<path d="M95 55V300H1020" fill="none" stroke="#667085"/>
+<text x="85" y="60" text-anchor="end">21.802</text>
+<text x="85" y="305" text-anchor="end">2.856</text>
+<text x="95" y="322">第 0 轮</text>
+<text x="1020" y="322" text-anchor="end">第 250 轮</text>
+<polyline points="95.0,71.9 280.0,104.5 465.0,139.7 650.0,149.1 835.0,132.4 1020.0,150.5" fill="none" stroke="#2563eb" stroke-width="3"/>
+<polyline points="95.0,71.9 280.0,168.9 465.0,225.5 650.0,247.5 835.0,265.7 1020.0,283.1" fill="none" stroke="#dc2626" stroke-width="3"/>
+<line x1="95" x2="123" y1="350" y2="350" stroke="#2563eb" stroke-width="3"/>
+<text x="130" y="355">window</text>
+<line x1="315" x2="343" y1="350" y2="350" stroke="#dc2626" stroke-width="3"/>
+<text x="350" y="355">reward</text>
+<text x="95" y="417" font-size="18">max: feasible_probability</text>
+<path d="M95 445V690H1020" fill="none" stroke="#667085"/>
+<text x="85" y="450" text-anchor="end">0.481</text>
+<text x="85" y="695" text-anchor="end">-0.036</text>
+<text x="95" y="712">第 0 轮</text>
+<text x="1020" y="712" text-anchor="end">第 250 轮</text>
+<polyline points="95.0,667.0 280.0,669.6 465.0,672.4 650.0,673.1 835.0,673.1 1020.0,673.1" fill="none" stroke="#2563eb" stroke-width="3"/>
+<polyline points="95.0,667.0 280.0,659.8 465.0,633.5 650.0,579.0 835.0,498.3 1020.0,461.9" fill="none" stroke="#dc2626" stroke-width="3"/>
+<line x1="95" x2="123" y1="740" y2="740" stroke="#2563eb" stroke-width="3"/>
+<text x="130" y="745">window</text>
+<line x1="315" x2="343" y1="740" y2="740" stroke="#dc2626" stroke-width="3"/>
+<text x="350" y="745">reward</text>
+<text x="95" y="807" font-size="18">int2float: expected_gap</text>
+<path d="M95 835V1080H1020" fill="none" stroke="#667085"/>
+<text x="85" y="840" text-anchor="end">4.329</text>
+<text x="85" y="1085" text-anchor="end">2.701</text>
+<text x="95" y="1102">第 0 轮</text>
+<text x="1020" y="1102" text-anchor="end">第 250 轮</text>
+<polyline points="95.0,851.9 280.0,874.8 465.0,895.0 650.0,896.9 835.0,916.2 1020.0,936.1" fill="none" stroke="#2563eb" stroke-width="3"/>
+<polyline points="95.0,851.9 280.0,890.1 465.0,920.0 650.0,977.3 835.0,1022.1 1020.0,1063.1" fill="none" stroke="#dc2626" stroke-width="3"/>
+<line x1="95" x2="123" y1="1130" y2="1130" stroke="#2563eb" stroke-width="3"/>
+<text x="130" y="1135">window</text>
+<line x1="315" x2="343" y1="1130" y2="1130" stroke="#dc2626" stroke-width="3"/>
+<text x="350" y="1135">reward</text>
+</svg>
