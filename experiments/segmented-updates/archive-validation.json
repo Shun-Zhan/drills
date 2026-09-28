@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "created_at": "2026-09-28T04:35:51.027590+00:00",
+  "fingerprint": "e4e5bd1829d5fed4d8a7c7ca4a41b11192b313ec38af9c64023539162157ce85",
+  "archive": "results/segmented-updates/evidence.tar.gz",
+  "archive_sha256": "7e0398c9bdfc18b687abe8a43c03e2aedaab03e48acfbed03069bc419dd6f4b4",
+  "archive_bytes": 45082631,
+  "checked_files": 8314,
+  "failures": [],
+  "exclusions": "Only volatile current.v/mapped.v, .tmp files, .lock and the archive itself; all best/prefix netlists retained.",
+  "verification_status": "pass",
+  "models": 36
+}

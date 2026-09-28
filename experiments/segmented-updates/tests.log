@@ -1,0 +1,23 @@
+test_actor_advantage_does_not_backpropagate_into_critic (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_bootstrap_uses_pre_update_critic_and_detached_target (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_boundary_bootstrap_terminal_zero_and_welford_once (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_complete_budget_cannot_extend_or_overwrite (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_first_trajectory_pairing_and_equal_initial_weights (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_frozen_and_uniform_network_adam_unchanged (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_independent_evaluation_reproducible_and_does_not_update (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_independent_uniform_evaluation_has_uniform_probabilities (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_invalid_learner_settings_fail_before_running_tools (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_legacy_exact_original_weights_adam_rng_and_episode_logs (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_nstep_targets_hand_calculated_reward_units (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_production_groups_locked_budgets_and_original_settings (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_real_tool_resume_after_first_uncommitted_segment (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_real_tool_resume_between_segments_exact (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_real_tool_resume_discards_failed_update_segment (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_real_tool_resume_discards_failure_mid_segment (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_resume_rejects_group_fingerprint_seed_and_hyperparameter_changes (test_segmented_updates.SegmentedUpdatesTest) ... ok
+test_state_hash_tracks_dtype_shape_and_values (test_segmented_updates.SegmentedUpdatesTest) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 74.968s
+
+OK
