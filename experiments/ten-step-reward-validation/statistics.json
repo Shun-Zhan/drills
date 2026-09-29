@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "fingerprint": "f97b11090adc09a057cafe8cb86a18ab5d29f81888475a59a572a1b752133dff",
+  "tests": {
+    "i2c": {
+      "wins": 10,
+      "seeds": 10,
+      "mean_improvement": 4.276666666666666,
+      "median_improvement": 4.65,
+      "bootstrap_95": [
+        2.846583333333333,
+        5.706666666666666
+      ],
+      "p_one_sided": 0.0009765625,
+      "p_holm": 0.001953125,
+      "conclusion": "通过"
+    },
+    "max": {
+      "wins": 10,
+      "seeds": 10,
+      "mean_improvement": 0.53,
+      "median_improvement": 0.5333333333333333,
+      "bootstrap_95": [
+        0.4,
+        0.6533333333333333
+      ],
+      "p_one_sided": 0.0009765625,
+      "p_holm": 0.001953125,
+      "conclusion": "通过"
+    }
+  },
+  "training_runs": 40,
+  "evaluation_rollouts": 1800
+}

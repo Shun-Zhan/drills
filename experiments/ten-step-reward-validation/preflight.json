@@ -1,0 +1,96 @@
+{
+  "status": "pass",
+  "fingerprint": "f97b11090adc09a057cafe8cb86a18ab5d29f81888475a59a572a1b752133dff",
+  "source_payload": {
+    "prior_fingerprint": "073718d35a3963353ddbf3115617c8d3518380a6447e854dbc74c0996588e72c",
+    "sources": {
+      "experiments/ten-step-reward-validation/analyze.py": "e9b74bd65e919b184d2b28eeae8ea8e745f609acc0f31d561a562a0f6e8de1c1",
+      "experiments/ten-step-reward-validation/context.py": "4a792f683f7bd4433e7f8b8cb66c19224dc3e8dac15cc244b72c3362de5de81b",
+      "experiments/ten-step-reward-validation/evaluate.py": "e640ba514bd346844fbc7bcf8faa131d6e4e8a0d241f50bfe91bbd22a1305bd2",
+      "experiments/ten-step-reward-validation/run.py": "c79f8c8487f8b38e6bf46bd9fd4845aeb12d0305d01c6d206eb274ccfabb70c6",
+      "experiments/ten-step-reward-validation/test_suite.py": "6b8e143097bf6b6226262b4e0092190a7449d769fda8b9b478fb5174d51a62b3",
+      "experiments/ten-step-reward-validation/protocol.yml": "030ec8c41545eb3d606a7998932d5227d49f05bfad6a6cf91cf307f1db6d5a13",
+      "experiments/four-step-followup/run.py": "8294ce5c1c88d56b7383c31bccea5a133ebf50adef65ce481ba840f49390a1fb",
+      "experiments/four-step-followup/support.py": "052a3683389a62f96fe3af8f4d507188414e76f44e92f3f95365ae32a3b05290",
+      "experiments/four-step-reward/reward.py": "3d8690c1c3af43dffddebf8161a3b7f6e2c58aea4b7d8654f8c86d9fd53def5e",
+      "experiments/four-step-reward/protocol.yml": "d4c1003d9501f10bc33a44450978da92de77dc10089c6ae0cf67e5e0fde090ed",
+      "drills/model.py": "c5401e467ba0639cf90f8155cba19f1d1eb1b7ba93b0b7ef8472ebf295f24b0b",
+      "drills/fpga_session.py": "1ecba422c1e69bc17bb911e2561130cf16f8b591eb30a23a6a38e500f71dcbf9",
+      "drills/features.py": "d0c9ab6028f2c28e1116de693a66eceefab0c78a5d57a34c0ee76dce4ab46dc6",
+      "drills/experiment.py": "b7d11ffe5db362ac0b57954fc647550718262ac92d8f650055b84ef1394b4b0b",
+      "params.yml": "ed6642b4e3caf3f4aa4426e3fe98cdbe7e46e0ce8d0bb8dc9e8a69c387311f52"
+    },
+    "tools": {
+      "abc_binary": "8bfa8e2ed1ea3c952cf9445e9467f16882b204f4c609e493bf96a83943817366",
+      "yosys_binary": "da0a89f2c35c7a5d4d582ab6c547a9cab00d38f4afeb2b4572994e9bd3ae36a4"
+    },
+    "circuits": {
+      "i2c": "3f6ab413a3f745c87811fa6565d972146f1f4e6ede78fae71fcb16e469b9b213",
+      "max": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9"
+    },
+    "protocol": {
+      "legacy_snapshot_sha256": "9a7ee835c6cbf78f766cdc5a734fdfe844262cb210d7a6f8d0594eb043f8cab9",
+      "circuits": [
+        "i2c",
+        "max"
+      ],
+      "groups": [
+        "original",
+        "candidate"
+      ],
+      "training_seeds": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "episodes": 100,
+      "iterations": 10,
+      "learning_rate": 0.01,
+      "gamma": 0.99,
+      "return_window": 8,
+      "warmup_episodes": 8,
+      "return_std_floor": 1.0,
+      "reward": {
+        "first_feasible": 100,
+        "lut_percent": 100,
+        "infeasible_depth": 10
+      },
+      "evaluation": {
+        "rollouts_per_training_seed": 30,
+        "first_seed": 30000,
+        "groups": [
+          "original",
+          "candidate",
+          "initial"
+        ]
+      },
+      "statistics": {
+        "alpha": 0.05,
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 20260929,
+        "ties_count_as_nonwins": true
+      },
+      "workers": 3,
+      "task_timeout_seconds": 1800
+    },
+    "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 18:02:02) \n[Clang 18.1.8 ]",
+    "torch": "2.8.0",
+    "numpy": "1.26.4"
+  },
+  "legacy_snapshot": {
+    "path": "/Users/zhan/Downloads/test/experiment-archives/four-step-reward-682ee92.tar.zst",
+    "sha256": "9a7ee835c6cbf78f766cdc5a734fdfe844262cb210d7a6f8d0594eb043f8cab9"
+  },
+  "comparisons": [
+    "reward-only",
+    "initial state",
+    "first episode"
+  ]
+}

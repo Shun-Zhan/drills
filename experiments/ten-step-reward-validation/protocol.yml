@@ -1,0 +1,28 @@
+# Fixed before running any training seed in this validation.
+validation:
+  legacy_snapshot_sha256: 9a7ee835c6cbf78f766cdc5a734fdfe844262cb210d7a6f8d0594eb043f8cab9
+  circuits: [i2c, max]
+  groups: [original, candidate]
+  training_seeds: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+  episodes: 100
+  iterations: 10
+  learning_rate: 0.01
+  gamma: 0.99
+  return_window: 8
+  warmup_episodes: 8
+  return_std_floor: 1.0
+  reward:
+    first_feasible: 100
+    lut_percent: 100
+    infeasible_depth: 10
+  evaluation:
+    rollouts_per_training_seed: 30
+    first_seed: 30000
+    groups: [original, candidate, initial]
+  statistics:
+    alpha: 0.05
+    bootstrap_draws: 10000
+    bootstrap_seed: 20260929
+    ties_count_as_nonwins: true
+  workers: 3
+  task_timeout_seconds: 1800
