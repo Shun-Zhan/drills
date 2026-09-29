@@ -1,0 +1,26 @@
+# Fixed before collecting results for this two-stage exploratory study.
+ten_step:
+  circuits: [int2float, i2c, max]
+  seeds: [0, 1, 2]
+  groups: [legacy, w001_old, w001_new, w010_old, w010_new]
+  episodes: 100
+  iterations: 10
+  learning_rates: {w001: 0.001, w010: 0.01}
+  return_window: 8
+  warmup_episodes: 8
+  return_std_floor: 1.0
+  reward: {first_feasible: 100, lut_percent: 100, infeasible_depth: 10}
+  evaluation:
+    rollouts_per_training_seed: 30
+    first_seed: 40000
+  workers: 3
+  task_timeout_seconds: 1800
+four_step:
+  circuits: [int2float, i2c, max]
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  episodes: 1000
+  iterations: 4
+  snapshots: [0, 250, 500, 750, 1000]
+  learning_rate: 0.01
+  workers: 3
+  task_timeout_seconds: 1800
