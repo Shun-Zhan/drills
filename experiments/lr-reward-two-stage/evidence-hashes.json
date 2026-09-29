@@ -1,0 +1,21 @@
+{
+  "stage1_fingerprint": "a1f08c33e3e9c09e1a9f662c50f0a705d93bb7774ca25a5e269b21374de4334a",
+  "stage2_fingerprint": "74b5f4acba16c791159bd0b7dc7cb05433d0b3c7bd80ee6e828ff5e5fe206f01",
+  "files": {
+    "ten-step-training.csv": "5b2dc218628cdff405180cbf412f623867904fe362053d86e162e352a7e49473",
+    "ten-step-rollouts.csv": "0d4a76a17d053acae8037b105704e69482870b128e5bf9a9dd32f9d51a9fb6a6",
+    "ten-step-seeds.csv": "0e4398b0096906a4d69bf1c7efdacde903d7629162678441f3d033a1c570342d",
+    "ten-step-contrasts.csv": "9913985d6b07821a909799a3cc570740d62c61d64373f0a8dfcdbd6816297400",
+    "four-step-seeds.csv": "b19246f8d163f1f05d51276dfd9668ca954bdf73c45c6a99e47e17493af95e92",
+    "ten-step.svg": "84e2ea5b36e13f601beaca9043646179104cad97520270f8287f8ac8d089e270",
+    "four-step.svg": "2a085c65522197a0fb19d6b5271e6c2fc0e8786150b3b020f3c6b931b477ef4b"
+  },
+  "raw_manifests": {
+    "results/lr-reward-two-stage/stage1/preflight.json": "88ef51af35a72579c4ca7371e942b203a08432889cd5b3e56f8be27e6e2d02cb",
+    "results/lr-reward-two-stage/stage1/train-manifest.json": "4812a780cb2cce05bdbf324575ebcdcfeb3645533d083996aea84c9e147540c9",
+    "results/lr-reward-two-stage/stage1/evaluation-manifest.json": "bea986be273e088410fa5e69a4b1775918dc5e7a0fc99c871de250d21a267ed6",
+    "results/lr-reward-two-stage/stage2/preflight.json": "3ec6577541d19c7c64a9d07281063e9bd9510244d6eac8be4e7ed71b4407d906",
+    "results/lr-reward-two-stage/stage2/train-manifest.json": "d98659f44fa1ec5aab85067d72ad422e7fec8c14949582e8cd9bb9e35b44afaa",
+    "results/lr-reward-two-stage/stage2/exact.json": "2a69adcbefeefda6643cf42457fbe24f51b8ce042cf48f3aa3e5c762dfd565f7"
+  }
+}

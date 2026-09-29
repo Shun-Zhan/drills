@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#1f2937} .small{font-size:12px}.title{font-size:18px;font-weight:bold}</style>
+<text x="30" y="34" class="title">1000×4 冻结策略精确曲线：每点为 10 个种子均值</text>
+<text x="30" y="54" class="small">各面板纵轴为局部尺度；预设终点为 1000 回合</text>
+<text x="52" y="77" font-size="16" font-weight="bold">int2float</text>
+<text x="52" y="97" class="small">期望最优差距 ↓</text>
+<line x1="52" y1="115" x2="52" y2="365" stroke="#94a3b8"/>
+<line x1="52" y1="365.0" x2="272" y2="365.0" stroke="#e2e8f0"/>
+<text x="47" y="369.0" text-anchor="end" class="small">1.85</text>
+<line x1="52" y1="240.0" x2="272" y2="240.0" stroke="#e2e8f0"/>
+<text x="47" y="244.0" text-anchor="end" class="small">3.14</text>
+<line x1="52" y1="115.0" x2="272" y2="115.0" stroke="#e2e8f0"/>
+<text x="47" y="119.0" text-anchor="end" class="small">4.43</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="2" points="52.0,135.8 107.0,271.9 162.0,323.7 217.0,335.9 272.0,344.2"/>
+<circle cx="52.0" cy="135.8" r="4" fill="#2563eb"/>
+<text x="39.0" y="126.8" class="small">4.217</text>
+<text x="40.0" y="385" class="small">0</text>
+<circle cx="107.0" cy="271.9" r="4" fill="#2563eb"/>
+<text x="94.0" y="262.9" class="small">2.814</text>
+<text x="95.0" y="385" class="small">250</text>
+<circle cx="162.0" cy="323.7" r="4" fill="#2563eb"/>
+<text x="149.0" y="314.7" class="small">2.280</text>
+<text x="150.0" y="385" class="small">500</text>
+<circle cx="217.0" cy="335.9" r="4" fill="#2563eb"/>
+<text x="204.0" y="326.9" class="small">2.153</text>
+<text x="205.0" y="385" class="small">750</text>
+<circle cx="272.0" cy="344.2" r="4" fill="#2563eb"/>
+<text x="259.0" y="335.2" class="small">2.068</text>
+<text x="260.0" y="385" class="small">1000</text>
+<text x="342" y="77" font-size="16" font-weight="bold">i2c</text>
+<text x="342" y="97" class="small">期望最优差距 ↓</text>
+<line x1="342" y1="115" x2="342" y2="365" stroke="#94a3b8"/>
+<line x1="342" y1="365.0" x2="562" y2="365.0" stroke="#e2e8f0"/>
+<text x="337" y="369.0" text-anchor="end" class="small">-0.93</text>
+<line x1="342" y1="240.0" x2="562" y2="240.0" stroke="#e2e8f0"/>
+<text x="337" y="244.0" text-anchor="end" class="small">10.76</text>
+<line x1="342" y1="115.0" x2="562" y2="115.0" stroke="#e2e8f0"/>
+<text x="337" y="119.0" text-anchor="end" class="small">22.44</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="2" points="342.0,135.8 397.0,310.5 452.0,338.9 507.0,344.0 562.0,344.2"/>
+<circle cx="342.0" cy="135.8" r="4" fill="#2563eb"/>
+<text x="329.0" y="126.8" class="small">20.496</text>
+<text x="330.0" y="385" class="small">0</text>
+<circle cx="397.0" cy="310.5" r="4" fill="#2563eb"/>
+<text x="384.0" y="301.5" class="small">4.162</text>
+<text x="385.0" y="385" class="small">250</text>
+<circle cx="452.0" cy="338.9" r="4" fill="#2563eb"/>
+<text x="439.0" y="329.9" class="small">1.508</text>
+<text x="440.0" y="385" class="small">500</text>
+<circle cx="507.0" cy="344.0" r="4" fill="#2563eb"/>
+<text x="494.0" y="335.0" class="small">1.030</text>
+<text x="495.0" y="385" class="small">750</text>
+<circle cx="562.0" cy="344.2" r="4" fill="#2563eb"/>
+<text x="549.0" y="335.2" class="small">1.015</text>
+<text x="550.0" y="385" class="small">1000</text>
+<text x="632" y="77" font-size="16" font-weight="bold">max</text>
+<text x="632" y="97" class="small">可行概率 ↑</text>
+<line x1="632" y1="115" x2="632" y2="365" stroke="#94a3b8"/>
+<line x1="632" y1="365.0" x2="852" y2="365.0" stroke="#e2e8f0"/>
+<text x="627" y="369.0" text-anchor="end" class="small">-0.08</text>
+<line x1="632" y1="240.0" x2="852" y2="240.0" stroke="#e2e8f0"/>
+<text x="627" y="244.0" text-anchor="end" class="small">0.48</text>
+<line x1="632" y1="115.0" x2="852" y2="115.0" stroke="#e2e8f0"/>
+<text x="627" y="119.0" text-anchor="end" class="small">1.05</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="2" points="632.0,344.2 687.0,248.4 742.0,175.6 797.0,157.4 852.0,135.8"/>
+<circle cx="632.0" cy="344.2" r="4" fill="#2563eb"/>
+<text x="619.0" y="335.2" class="small">0.013</text>
+<text x="620.0" y="385" class="small">0</text>
+<circle cx="687.0" cy="248.4" r="4" fill="#2563eb"/>
+<text x="674.0" y="239.4" class="small">0.445</text>
+<text x="675.0" y="385" class="small">250</text>
+<circle cx="742.0" cy="175.6" r="4" fill="#2563eb"/>
+<text x="729.0" y="166.6" class="small">0.774</text>
+<text x="730.0" y="385" class="small">500</text>
+<circle cx="797.0" cy="157.4" r="4" fill="#2563eb"/>
+<text x="784.0" y="148.4" class="small">0.856</text>
+<text x="785.0" y="385" class="small">750</text>
+<circle cx="852.0" cy="135.8" r="4" fill="#2563eb"/>
+<text x="839.0" y="126.8" class="small">0.953</text>
+<text x="840.0" y="385" class="small">1000</text>
+</svg>
